@@ -1,4 +1,4 @@
-# Abu Hasan Next Js Portfolio 
+# Next Js E-Commerce 
 
 ## [Live link : abu-next-commerce.vercel.app][LiveLink]
 
