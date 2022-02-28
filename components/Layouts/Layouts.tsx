@@ -6,6 +6,7 @@ import { CssBaseline, StyledEngineProvider } from '@mui/material';
 import themes from '../themes';
 import Customization from '../themes/Customization';
 import MainNavBar from './MainNav/MainNavBar';
+import Footer from './Footer/Footer';
 
 const Layouts: NextPage = ({ children }) => {
     const customization = useSelector((state: RootState) => state.customization);
@@ -21,6 +22,9 @@ const Layouts: NextPage = ({ children }) => {
                 <main id="mainLayoutWrapper" dir={customization?.dirChange ? 'rtl' : 'ltr'} className="container mx-auto px-3">
                     {children}
                 </main>
+                <footer id="footer_wrapper">
+                    <Footer />
+                </footer>
                 <Customization />
             </ThemeProvider>
         </StyledEngineProvider>

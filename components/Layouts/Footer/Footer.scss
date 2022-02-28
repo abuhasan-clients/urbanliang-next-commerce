@@ -1,0 +1,24 @@
+#footer_wrapper {
+    background-color: #f2f2f2;
+
+    .footer_logo {
+        font-size: 30px;
+        font-weight: 200;
+        display: block;
+        margin-bottom: 25px;
+    }
+    .footer_title {
+        font-size: 30px;
+        font-weight: 200;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    ul {
+        li {
+            a {
+                border-bottom: 1px dotted #000;
+            }
+        }
+    }
+}
