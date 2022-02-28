@@ -1,0 +1,12 @@
+#themeSwitch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#font_family_select {
+    .font_family_parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

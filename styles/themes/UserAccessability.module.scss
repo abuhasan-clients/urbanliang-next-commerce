@@ -1,0 +1,17 @@
+@import "../scss/main.scss";
+
+#user_accessability {
+    .language_button {
+        #dropdown_btn {
+            font-size: 18px;
+            color: $MainText;
+        }
+    }
+}
+.activeLanguage {
+    color: #fff;
+    background-color: $pink23756104;
+    &:hover {
+        background-color: $pink23756104;
+    }
+}
