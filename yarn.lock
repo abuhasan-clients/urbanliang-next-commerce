@@ -365,11 +365,6 @@
   "resolved" "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz"
   "version" "1.1.0"
 
-"@swc/core-win32-x64-msvc@^1.2.146":
-  "integrity" "sha512-P45vAh0hR9dISIceSv6MkypjT0WduLWB4U8LPoCneeAw7mA1U7liS0Uu1PeiafxQVMWg8SNyIJFDcSg/haLJgg=="
-  "resolved" "https://registry.npmjs.org/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.2.146.tgz"
-  "version" "1.2.146"
-
 "@tabler/icons@^1.54.0":
   "integrity" "sha512-X0SjUMWlu6IWsWIZP6gtMZhi9Q7pO2+BQ9vex28rOu+gtym7fZjnDXWG0okzVhtt4mlOwJ2BHQllRky29lsn7Q=="
   "resolved" "https://registry.npmjs.org/@tabler/icons/-/icons-1.54.0.tgz"

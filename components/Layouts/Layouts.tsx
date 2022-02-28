@@ -8,7 +8,7 @@ import Customization from '../themes/Customization';
 import MainNavBar from './MainNav/MainNavBar';
 import Footer from './Footer/Footer';
 
-const Layouts: NextPage = ({ children }) => {
+const Layouts: NextPage = ({ children }: any) => {
     const customization = useSelector((state: RootState) => state.customization);
     // console.log(customization);
 
