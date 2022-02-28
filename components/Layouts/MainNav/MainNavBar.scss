@@ -1,0 +1,260 @@
+@import "../../../styles/scss/main.scss";
+
+#header_nav_parent {
+    // background-color: $defaultNavBg;
+    height: 110px;
+}
+.main-header {
+    padding: 10px 0 10px 0;
+    // font-family: "Poppins", sans-serif;
+    position: fixed;
+    width: 100%;
+    // color: $MainWhiteColor;
+    z-index: 5;
+    // background-color: $defaultNavBg;
+    transition: 0.4s ease-in-out;
+    .nav_logo {
+        font-size: 30px;
+        font-weight: 200;
+    }
+    a {
+        text-decoration: none;
+        color: $MainWhiteColor;
+    }
+
+    .nav-links {
+        list-style: none;
+        margin: 0;
+        .logoBrand {
+            font-size: 30px;
+            font-weight: 200;
+        }
+        .search_button {
+            position: relative;
+            input {
+                border: none;
+                box-shadow: none;
+                color: #1f1f1f;
+                border: 1.5px solid #000;
+                width: 270px;
+                outline: none;
+                border-radius: 100px;
+                padding: 4px 0 5px 40px;
+
+                &::placeholder {
+                    color: #1f1f1f;
+                }
+            }
+            i {
+                position: absolute;
+                left: 0;
+                padding: 8px 15px 8px 10px;
+                font-size: 20px;
+                color: #1f1f1f;
+                // background-color: red;
+            }
+        }
+        .header_icons {
+            i {
+                text-align: center;
+                font-size: 25px;
+                height: 40px;
+                width: 40px;
+                border-radius: 100%;
+                padding: 8px 5px;
+                background-color: #fff;
+                color: #1f1f1f;
+                margin: 0 2px;
+                border: 1px solid #172126;
+            }
+        }
+        .dropdown_parent {
+            position: relative;
+            transition: all 0.6s ease;
+
+            &:hover .dropdown_menu {
+                display: block;
+            }
+            button {
+                font-size: 15px;
+                // background-color: red;
+                padding: 15px 15px 15px 0;
+                margin: 0 5px;
+
+                // &:hover {
+                //     box-shadow: 0 0 3px #ddd;
+                // }
+            }
+            .dropdown_menu {
+                display: none;
+                border-radius: 5px;
+                width: auto;
+                top: 45px;
+                padding:0 10px 10px 10px;
+                z-index: 10;
+                background-color: #fff;
+                position: absolute;
+                animation: navDropdown 0.3s ease-in-out;
+                a {
+                    color: #1f1f1f;
+                    margin: 2px 0;
+                    padding: 5px 0;
+                }
+            }
+        }
+        .nav-link {
+            display: flex;
+            align-items: center;
+            transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            &:nth-of-type(2) {
+                transition-delay: 0.1s;
+            }
+            &:nth-of-type(3) {
+                transition-delay: 0.2s;
+            }
+            &:nth-of-type(4) {
+                transition-delay: 0.3s;
+            }
+            //    span & icon
+            i {
+                color: #fff;
+            }
+            &:hover i {
+                color: $NavActiveColor;
+            }
+            span {
+                color: #fff;
+                &:hover {
+                    color: $NavActiveColor;
+                }
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: $NavActiveColor;
+                    visibility: hidden;
+                    transition: all 0.3s ease-in-out 0s;
+                }
+            }
+            &:hover > span::before {
+                visibility: visible;
+                width: 100%;
+            }
+            //    span & icon
+            //    anchor
+            a {
+                font-weight: 300;
+                position: relative;
+                display: block;
+                // text-shadow: 0 0 4px $MainShadowColor;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: $NavActiveColor;
+                    visibility: hidden;
+                    width: 0px;
+                    transition: all 0.3s ease-in-out 0s;
+                }
+            }
+            a:hover::before,
+            &:hover > a::before {
+                visibility: visible;
+                width: 100%;
+            }
+            a:hover,
+            li:hover > a {
+                color: $NavActiveColor;
+            }
+            //    anchor
+        }
+    }
+    .menu-icon {
+        position: relative;
+        padding: 10px 10px;
+        cursor: pointer;
+        z-index: 1;
+        display: none;
+
+        &__line {
+            display: block;
+            position: relative;
+            height: 2px;
+            width: 20px;
+            border-radius: 4px;
+            background-color: $MainWhiteColor;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: $MainWhiteColor;
+                border-radius: 4px;
+                transition: background 0.8s ease;
+            }
+            &::before {
+                transform: translateY(-5px);
+            }
+            &::after {
+                transform: translateY(5px);
+            }
+        }
+    }
+    .menu-btn {
+        position: absolute;
+        opacity: 0;
+        color: #fff;
+    }
+
+    &.scrolled {
+        & {
+            border-bottom: none !important;
+        }
+        a {
+            color: $MainWhiteColor;
+        }
+        .dropdown-menu {
+            background-color: #172126 !important;
+        }
+        background-color: #172126 !important;
+        box-shadow: 0 0 3px #1347b1;
+        color: $MainWhiteColor;
+
+        .menu-icon {
+            &__line,
+            &__line::before,
+            &__line::after {
+                background: $MainWhiteColor;
+            }
+        }
+        .nav-link {
+            a {
+                color: $MainWhiteColor;
+                &:hover {
+                    color: $MainWhiteColor;
+                    transition: 0.9s;
+                }
+            }
+        }
+    }
+}
+
+.activeRoute {
+    color: $NavActiveColor !important;
+}
+.activeRoute:hover {
+    border-top: none;
+}
+
+@import "./media";
+@import "./animation.scss";

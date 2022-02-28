@@ -1,5 +1,5 @@
 {
-  "name": "abu-next-portfolio",
+  "name": "next-commerce",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -29,6 +29,7 @@
     "react-icons": "^4.3.1",
     "react-perfect-scrollbar": "^1.5.8",
     "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.0-alpha.5",
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
