@@ -1,7 +1,9 @@
 import type { NextPage } from 'next';
-import { PageSeo } from '../components/Seo/PageSeo';
-import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
+import BestSellers from '../components/Pagescompo/Home/BestSellers';
+import SignupMail from '../components/Pagescompo/Home/SignupMail';
+import { PageSeo } from '../components/Seo/PageSeo';
 
 const Home: NextPage = () => {
     const { t } = useTranslation();
@@ -63,6 +65,8 @@ const Home: NextPage = () => {
                 <a>About</a>
             </Link>
             <i className="fa-solid fa-house-user" />
+            <BestSellers />
+            <SignupMail />
         </>
     );
 };
