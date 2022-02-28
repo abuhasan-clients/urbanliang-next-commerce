@@ -1,6 +1,6 @@
 # Abu Hasan Next Js Portfolio 
 
-## [Live link : devabuhasan.vercel.app][LiveLink]
+## [Live link : abu-next-commerce.vercel.app][LiveLink]
 ____________________________
 ### Folder Structure
     ├── public                      # public folder
@@ -25,7 +25,7 @@ ____________________________
 
 
 <!-- Links -->
-[LiveLink]: https://devabuhasan.vercel.app
+[LiveLink]: https://abu-next-commerce.vercel.app
 [FarmerMotion]: https://www.framer.com/docs/examples
 [talwindscss]: https://www.tallwindcss.com
 
