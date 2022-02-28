@@ -1,0 +1,48 @@
+.car{
+    height: 100%;
+    
+}
+.cardMain{
+    height: 500px;}
+.car:hover{
+    box-shadow:12px 12px 30px red ;
+
+     
+}
+.borderDe{
+  margin-bottom: 5%;
+  width: 95%;
+  margin:  2% auto;
+}
+// this is for sign up for mail part css
+.mailInput{
+  
+    height: 38px;
+border: 1px solid gray;
+    width: 440px;
+    // width: 99%;
+    margin-top: 12px;
+   border-radius: 5px;
+    text-align: center;
+    outline: none;
+}
+.signBtn{
+    height: 40px;
+    color: white;
+    border-radius: 7px;
+    font-size: larger;
+    text-align: center;
+  
+    width: 150px;
+    background: #E86B33;
+    margin-top: 3%;
+    margin-left: 140px;
+    
+
+  
+}
+.dotted{
+    border: dotted;
+    color: black;
+    width: 20px;
+}
