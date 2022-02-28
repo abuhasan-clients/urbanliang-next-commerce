@@ -25,6 +25,7 @@
     ],
     "rules": {
         "@typescript-eslint/no-explicit-any": "off",
+        "@next/next/no-img-element": 0,
         "allowElseIf": 0,
         "no-unused-vars": [
             1,

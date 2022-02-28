@@ -186,7 +186,7 @@ const Customization = () => {
                         borderBottomLeftRadius: '50%',
                         borderTopRightRadius: '50%',
                         borderBottomRightRadius: '4px',
-                        top: '25%',
+                        top: '45%',
                         position: 'fixed',
                         right: customization?.dirChange ? 'auto' : 10,
                         left: customization?.dirChange ? 10 : 'auto',
