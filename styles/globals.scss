@@ -2,7 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "./scss/main.scss";
+
+// parent scss
 @import "../components/Layouts/MainNav/MainNavBar.scss";
+@import "../components/Layouts/Footer/Footer.scss";
+
 // @import "bootstrap/dist/css/bootstrap.min.css";
 
 // Font Awesome
