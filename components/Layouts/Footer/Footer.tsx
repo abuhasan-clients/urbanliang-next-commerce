@@ -83,15 +83,12 @@ const Footer = () => {
                                         asab@bystie.com
                                     </a>
                                 </li>
-                                <div className="d-flex align-items-center justify-content-center">
-                                    <div>
-                                        {' '}
-                                        <ImInstagram />
-                                    </div>
-
-                                    <AiOutlineTwitter />
-                                    <FaFacebookF />
-                                    <FaTiktok />
+                                <div className="footerIconDiv">
+                                    {' '}
+                                    <ImInstagram className="footerIcon insta" />
+                                    <AiOutlineTwitter className="footerIcon" />
+                                    <FaFacebookF className="footerIcon" />
+                                    <FaTiktok className="footerIcon" />
                                 </div>
                             </ul>
                         </div>

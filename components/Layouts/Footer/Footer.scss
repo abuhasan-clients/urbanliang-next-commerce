@@ -14,12 +14,7 @@
         display: block;
         margin-bottom: 25px;
     }
-    .footerIcon{
-        height: 30px;
-        width: 120px;
-        background: greenyellow;
-        color: white;
-    }
+ 
 
     ul {
         li {
@@ -29,3 +24,27 @@
         }
     }
 }
+.footerIconDiv{
+   display: flex;
+   align-items:flex-start;
+   justify-content: flex-start;
+
+   
+}
+@media only screen and (max-width: 1022px) {
+   .footerIconDiv{
+    align-items:center;
+    justify-content: center;
+    }
+  }
+.footerIcon{
+    margin-left: 7px;
+    font-size: 22px;
+    width: 34px ;
+    padding: 3px;
+    height: 35px;
+    background: #337357;
+    color: white;
+    border-radius: 7px;
+}
+.insta{margin-left: 0px;}
