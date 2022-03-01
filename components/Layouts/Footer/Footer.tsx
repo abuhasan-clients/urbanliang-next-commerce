@@ -1,7 +1,101 @@
+import { AiOutlineTwitter } from 'react-icons/ai';
+import { FaFacebookF, FaTiktok } from 'react-icons/fa';
+import { ImInstagram } from 'react-icons/im';
+
 const Footer = () => {
     return (
         <div className="container mx-auto px-3 py-10">
-            <div className=" flex flex-col flex-wrap md:items-center lg:items-start md:flex-row md:flex-nowrap ">
+            <footer className="bg-gray-100 text-center lg:text-left">
+                <div className="container p-6">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2">
+                        <div className="mb-6">
+                            <h5 className="uppercase font-bold mb-2.5 text-gray-800 text-xl mb-10">LOVIE AURORA</h5>
+
+                            <ul className="list-none mb-0 mb-8 space-y-3 ">
+                                <li>
+                                    <a href="#!" className="  text-gray-600 hover:text-gray-800">
+                                        about us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" className="text-gray-600 hover:text-gray-800">
+                                        career
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" className="text-gray-600 hover:text-gray-800">
+                                        the blog
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="mb-6">
+                            <h5 className="uppercase font-bold mb-2.5 text-gray-800 mb-10  text-xl">CUSTOMER SERVICE</h5>
+
+                            <ul className="list-none mb-0 space-y-3">
+                                <li>
+                                    <a href="#!" className="text-gray-600 hover:text-gray-800">
+                                        refund/return/exchange
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" className="text-gray-600 hover:text-gray-800">
+                                        shipping & delivery
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" className="text-gray-600 hover:text-gray-800">
+                                        helps & FAQs
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="mb-6">
+                            <h5 className="uppercase font-bold mb-2.5 text-gray-800 mb-10 text-xl">OPPORUNITIES</h5>
+
+                            <ul className="list-none mb-0 space-y-3">
+                                <li>
+                                    <a href="#!" className="text-gray-600 hover:text-gray-800">
+                                        sell on lovie aurora
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" className="text-gray-600 hover:text-gray-800">
+                                        affiliate program
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" className="text-gray-600 hover:text-gray-800">
+                                        help creator grow
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="mb-6">
+                            <h5 className="uppercase font-bold mb-2.5 text-gray-800 mb-10 text-xl">CONTACT US</h5>
+
+                            <ul className="list-none mb-0 space-y-3">
+                                <li>
+                                    <a href="#!" className="text-gray-600 hover:text-gray-800">
+                                        asab@bystie.com
+                                    </a>
+                                </li>
+                                <div className="footerIconDiv">
+                                    {' '}
+                                    <ImInstagram className="footerIcon insta" />
+                                    <AiOutlineTwitter className="footerIcon" />
+                                    <FaFacebookF className="footerIcon" />
+                                    <FaTiktok className="footerIcon" />
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            {/* <div className=" flex flex-col flex-wrap md:items-center lg:items-start md:flex-row md:flex-nowrap ">
                 <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
                     <span className="footer_logo">
                         LOVIE AURORA <i className="fa-solid fa-heart-pulse" />
@@ -64,7 +158,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="flex justify-center">
                 <p className="text-base text-gray-400">All rights reserved by @ company 2021</p>
             </div>
