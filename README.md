@@ -6,18 +6,14 @@
 ____________________________
 ### Folder Structure
     ├── public                      # public folder
-    ├── src                         # src folder
-    │   ├── Component               # All component here
-    │   │       ├── All Charts      # All charts here
-    │   │       ├── All Forms       # All charts here
-    │   ├── images                  # Images folder
-    │   ├── Pages                   # All main view pages
-    │   │      ├── Admin            # Route file & admin page
-    │   │      ├── Chat             # Route file & chat page
-    │   │
-    │   └── Services  
-    │          ├── Axios            # Axios Data Fetching
-    │          ├── Fonts            # Axios Data Fetching
+    ├── Component                   # All component here
+    │           └── Layouts         # Layouts here
+    │           └── Pagescompo      # Pages Component here
+    │           └── SEO             # SEO DATA here
+    │           └── Themes          # Layouts here
+    ├── Pages                       # All main view pages
+    │       ├── index.tsx           # Home page
+    │       ├── about.tsx           # About page
     └── ...
 
 ### Important Links
