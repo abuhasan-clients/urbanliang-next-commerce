@@ -71,7 +71,9 @@
         .dropdown_parent {
             position: relative;
             transition: all 0.6s ease;
-
+            &:hover {
+                color: #db2f04;
+            }
             &:hover .dropdown_menu {
                 display: block;
             }
@@ -90,7 +92,7 @@
                 border-radius: 5px;
                 width: auto;
                 top: 45px;
-                padding:0 10px 10px 10px;
+                padding: 0 10px 10px 10px;
                 z-index: 10;
                 background-color: #fff;
                 position: absolute;
@@ -99,6 +101,9 @@
                     color: #1f1f1f;
                     margin: 2px 0;
                     padding: 5px 0;
+                    &:hover {
+                        color: #db2f04;
+                    }
                 }
             }
         }

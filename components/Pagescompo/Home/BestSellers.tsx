@@ -6,7 +6,7 @@ const BestSellers: NextPage = () => {
     return (
         <>
             <div className="text-center">
-                <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">OUR BEST SELLERS</p>
+                <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">OUR BEST SELLERS</p>
                 <p className="mt-3">It is a long established fact that a reader will be distracted by the readable content</p>
                 <p>that a reader will be distracted</p>
             </div>
