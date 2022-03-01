@@ -39,7 +39,7 @@ const BestSellers: NextPage = () => {
                         <div className={styles.cardMain}>
                             <img
                                 className={styles.car}
-                                src="https://i.ibb.co/D9Sm858/photo-1573160059602-81357cdd480f.jpg"
+                                src="https://i.ibb.co/nnMLKhR/photo-1610694955371-d4a3e0ce4b52.jpg"
                                 alt="Sunset in the mountains"
                             />
                             <div className={`${styles.card_layer}`} />
