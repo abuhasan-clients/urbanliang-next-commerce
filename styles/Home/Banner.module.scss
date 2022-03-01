@@ -23,3 +23,29 @@
         }
     }
 }
+
+@media screen and (max-width: 868px) {
+    .banner_wrapper {
+        .img_parent {
+            .banner_info {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner_wrapper {
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 568px) {
+    .banner_wrapper {
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 468px) {
+    .banner_wrapper {
+        height: 40vh;
+    }
+}
