@@ -19,7 +19,7 @@ const Layouts: NextPage = ({ children }: any) => {
                 <header id="header_nav_parent">
                     <MainNavBar />
                 </header>
-                <main id="mainLayoutWrapper" dir={customization?.dirChange ? 'rtl' : 'ltr'} className="container mx-auto px-3">
+                <main id="mainLayoutWrapper" className="container mx-auto px-3">
                     {children}
                 </main>
                 <footer id="footer_wrapper">

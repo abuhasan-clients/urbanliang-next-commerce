@@ -5,9 +5,9 @@ import styles from '../../styles/themes/Customization.module.scss';
 // material-ui
 import { useTheme } from '@mui/material/styles';
 import {
-    Switch,
+    // Switch,
     Drawer,
-    Box,
+    // Box,
     Fab,
     FormControl,
     FormControlLabel,
@@ -149,10 +149,10 @@ const Customization = () => {
     const [checked, setChecked] = useState(customization.dirChange);
     // console.log(checked);
 
-    const handleChange = (event: any) => {
-        setChecked(event.target.checked);
-        localStorage.setItem('dirChange', event.target.checked);
-    };
+    // const handleChange = (event: any) => {
+    //     setChecked(event.target.checked);
+    //     localStorage.setItem('dirChange', event.target.checked);
+    // };
     useEffect(() => {
         dispatch({ type: DIR_CHANGE, dirChange: checked });
     }, [dispatch, checked, customization.dirChange]);
@@ -249,7 +249,7 @@ const Customization = () => {
                                             />
                                         </div>
                                     </RadioGroup>
-                                    <Box
+                                    {/* <Box
                                         sx={{
                                             display: 'flex',
                                             flexDirection: 'row',
@@ -262,7 +262,7 @@ const Customization = () => {
                                             Direction Now <span className="text-warning">{checked ? 'RTL' : 'LTR'}</span>
                                         </h5>
                                         <Switch id="dirChange" checked={checked} onChange={handleChange} color="warning" />
-                                    </Box>
+                                    </Box> */}
                                 </FormControl>
                             </div>
                         </Grid>
