@@ -8,20 +8,14 @@ interface InitialStateType {
     opened: boolean;
 }
 
-// const initialDir = localStorage.getItem('dirChange');
-
 export const initialState: InitialStateType = {
     // isOpen: [], // for active default menu
     fontFamily: `'Roboto Slab', serif`,
     borderRadius: 12,
-    // themeChange: initialTheme === null ? 'light' : initialTheme,
     themeChange: 'light',
-    // dirChange: initialDir === null ? false : initialDir,
     dirChange: false,
     opened: true
 };
-
-// ==============================|| CUSTOMIZATION REDUCER ||============================== //
 
 const customizationReducer = (state = initialState, action: any) => {
     let id;
