@@ -22,7 +22,7 @@ const Layouts: NextPage = ({ children }: any) => {
                 <main id="mainLayoutWrapper" className="container mx-auto px-3">
                     {children}
                 </main>
-                <footer id="footer_wrapper">
+                <footer id="footer_wrapper" className={`${customization.themeChange === 'light' ? 'footer_main_bg' : ''}`}>
                     <Footer />
                 </footer>
                 <Customization />
