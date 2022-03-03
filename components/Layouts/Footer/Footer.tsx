@@ -53,7 +53,7 @@ const Footer = () => {
                         </div>
 
                         <div className="mb-6">
-                            <h5 className="uppercase font-bold mb-2.5 tmb-10 text-xl">OPPORUNITIES</h5>
+                            <h5 className="uppercase font-bold mb-2.5 mb-10 text-xl">OPPORUNITIES</h5>
 
                             <ul className="list-none mb-0 space-y-3">
                                 <li>
