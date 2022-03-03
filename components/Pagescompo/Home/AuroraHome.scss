@@ -1,0 +1,18 @@
+.bigCard{
+    width: 30%;
+    .reamaining{
+        display: none;
+      
+    
+    }
+}
+
+
+
+.bigCard:hover{
+    .reamaining{
+        display: block;
+        transition: .6s ;
+    }
+
+}
