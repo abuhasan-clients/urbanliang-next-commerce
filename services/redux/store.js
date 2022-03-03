@@ -7,14 +7,14 @@ import rootReducer from './rootReducer';
 const userInfo = (valueName) => {
     if (typeof window !== 'undefined') {
         const getItem = localStorage.getItem(valueName);
-        const results = getItem ? JSON.parse(localStorage.getItem(valueName) || '{}') : null;
+        const results = getItem ? JSON.parse(localStorage.getItem(valueName)) : null;
         return results;
     }
 };
 const cartWishItems = (valueName) => {
     if (typeof window !== 'undefined') {
         const getItem = localStorage.getItem(valueName);
-        const results = getItem ? JSON.parse(localStorage.getItem(valueName) || '[]') : [];
+        const results = getItem ? JSON.parse(localStorage.getItem(valueName)) : [];
         return results;
     }
 };
