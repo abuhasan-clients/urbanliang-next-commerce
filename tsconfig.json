@@ -31,7 +31,7 @@
     "components/themes/index.js",
     "services/redux/store.js",
     "pages/my-account/index.tsx",
-    "pages/my-account/feed.jsx"
+    "pages/my-account/feed.tsx"
   ],
   "exclude": [
     "node_modules"
