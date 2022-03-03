@@ -3,7 +3,7 @@ import { CART_ADD_ITEM, CART_REMOVE_ITEM, CART_RESET, CART_SAVE_PAYMENT_METHOD, 
 
 export const addToCart = (id: string, quantity: any) => async (dispatch: any, getState: any) => {
     try {
-        const { data } = await axios.get(`${process.env.REACT_APP_SERVER_URL}/api/products/${id}`);
+        const { data } = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/products/${id}`);
         dispatch({
             type: CART_ADD_ITEM,
             payload: {

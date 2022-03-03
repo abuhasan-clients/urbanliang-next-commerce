@@ -29,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     "components/themes/index.js"
-, "services/redux/store.js"  ],
+, "services/redux/store.ts"  ],
   "exclude": [
     "node_modules"
   ]

@@ -3,7 +3,7 @@ import { WISHLIST_ADD_ITEM, WISHLIST_REMOVE_ITEM, WISHLIST_RESET } from './wishl
 
 export const addToWishlist = (id: string, quantity: any) => async (dispatch: any, getState: any) => {
     try {
-        const { data } = await axios.get(`${process.env.REACT_APP_SERVER_URL}/api/products/${id}`);
+        const { data } = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/products/${id}`);
         dispatch({
             type: WISHLIST_ADD_ITEM,
             payload: {
@@ -15,7 +15,6 @@ export const addToWishlist = (id: string, quantity: any) => async (dispatch: any
                 quantity
             }
         });
-
         localStorage.setItem('wishlistItems', JSON.stringify(getState().wishlist.wishlistItems));
     } catch (err) {
         console.error(err.message);

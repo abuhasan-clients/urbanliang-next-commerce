@@ -13,22 +13,22 @@ export const wishlistReducer = (state = initialState, action: any) => {
             if (existingItem) {
                 return {
                     ...state,
-                    cartItems: state.wishlistItems.map((x: any) => (x.product === existingItem.product ? item : x))
+                    wishlistItems: state.wishlistItems.map((x: any) => (x.product === existingItem.product ? item : x))
                 };
             } else {
-                return { ...state, cartItems: [...state.wishlistItems, item] };
+                return { ...state, wishlistItems: [...state.wishlistItems, item] };
             }
 
         case WISHLIST_REMOVE_ITEM:
             return {
                 ...state,
-                cartItems: state.wishlistItems.filter((x: any) => x.product !== action.payload)
+                wishlistItems: state.wishlistItems.filter((x: any) => x.product !== action.payload)
             };
 
         case WISHLIST_RESET:
             return {
                 ...state,
-                cartItems: []
+                wishlistItems: []
             };
 
         default:
