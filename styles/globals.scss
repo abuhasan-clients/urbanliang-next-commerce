@@ -47,3 +47,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.toastMain {
+  .message,
+  .closeBtn {
+    font-size: 18px;
+  }
+  .closeBtn {
+    font-weight: 700;
+  }
+  .commonParent {
+    color: #FFF;
+    max-width: 500px !important;
+  }
+  .toastSuccess {
+    background-color: $MainLightGreen;
+  }
+  .toastError {
+    background-color: $MainLightRed;
+  }
+}
