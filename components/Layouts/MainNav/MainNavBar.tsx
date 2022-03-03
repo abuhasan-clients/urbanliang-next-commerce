@@ -1,11 +1,11 @@
-import { useState, useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const MainNavBar = () => {
     const location = useRouter();
-    const [scrollTrue, setScrollTrue] = useState(false);
-    console.log(scrollTrue);
+    // const [scrollTrue, setScrollTrue] = useState(false);
+    // console.log(scrollTrue);
 
     // if (typeof window !== 'undefined') {
     //     document.cookie = 'i18next=bn';
@@ -28,10 +28,10 @@ const MainNavBar = () => {
 
             window.onscroll = () => {
                 scrollingChange();
-                if (window.scrollY > 10) {
-                    return setScrollTrue(true);
-                }
-                return setScrollTrue(false);
+                // if (window.scrollY > 10) {
+                //     return setScrollTrue(true);
+                // }
+                // return setScrollTrue(false);
             };
         }
     }, []);

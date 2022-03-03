@@ -8,6 +8,7 @@
       "esnext"
     ],
     "noImplicitAny": true,
+    "useUnknownInCatchVariables": false,
     "noImplicitThis": true,
     "strictNullChecks": true,
     "allowJs": true,
@@ -26,8 +27,9 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "components/themes/index.js"  ],
+    "**/*.tsx",
+    "components/themes/index.js"
+, "services/redux/store.ts"  ],
   "exclude": [
     "node_modules"
   ]
