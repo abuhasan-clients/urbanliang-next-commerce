@@ -3,7 +3,7 @@ import UserAccountLayout from '../../components/Layouts/UserAccountLayout/UserAc
 import { PageSeo } from '../../components/Seo/PageSeo';
 
 export const getServerSideProps = async () => {
-    const user = false;
+    const user = true;
     if (!user) {
         return {
             redirect: {
