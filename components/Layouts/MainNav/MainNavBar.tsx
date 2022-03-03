@@ -148,8 +148,12 @@ const MainNavBar = () => {
     return (
         <div className="main-header" ref={myRef}>
             <div className="container px-3 mx-auto flex items-center justify-between">
-                <div className="nav_logo hidden">
-                    LOVIE AURORA <i className="fa-solid fa-heart-pulse" />
+                <div className="nav_logo hidden z-50">
+                    <Link href="/">
+                        <a>
+                            LOVIE AURORA <i className="fa-solid fa-heart-pulse" />
+                        </a>
+                    </Link>
                 </div>
                 <input type="checkbox" className="menu-btn" id="menu-btn" />
                 <label htmlFor="menu-btn" className="menu-icon">
@@ -158,7 +162,11 @@ const MainNavBar = () => {
                 <ul className="nav-links m-0 flex flex-col w-full">
                     <div className="flex justify-between header_top_nav">
                         <div className="logoBrand">
-                            LOVIE AURORA <i className="fa-solid fa-heart-pulse" />
+                            <Link href="/">
+                                <a>
+                                    LOVIE AURORA <i className="fa-solid fa-heart-pulse" />
+                                </a>
+                            </Link>
                         </div>
                         <div className="icons_parent flex items-center">
                             <div className="search_button">

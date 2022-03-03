@@ -7,10 +7,12 @@ import themes from '../themes';
 import Customization from '../themes/Customization';
 import MainNavBar from './MainNav/MainNavBar';
 import Footer from './Footer/Footer';
+import { useRouter } from 'next/router';
 
 const Layouts: NextPage = ({ children }: any) => {
     const customization = useSelector((state: RootState) => state.customization);
-    // console.log(customization);
+    const router = useRouter();
+    console.log(router);
 
     return (
         <StyledEngineProvider injectFirst>
