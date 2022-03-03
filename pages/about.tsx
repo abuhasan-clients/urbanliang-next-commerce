@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { getProductList } from '../services/redux/product/productActions';
 import { addToCart } from '../services/redux/cart/cartActions';
 import { addToWishlist } from '../services/redux/wishList/wishlistActions';
-const about: NextPage = () => {
+const About: NextPage = () => {
     const dispatch = UseAppDispatch();
     const { products, /*pages: totalPage,*/ loading }: any = UseAppSelector((state) => state.productList);
 
@@ -56,4 +56,4 @@ const about: NextPage = () => {
     );
 };
 
-export default about;
+export default About;
