@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import { PageSeo } from '../../components/Seo/PageSeo';
 import Link from 'next/link';
+import SignupMail from '../../components/Pagescompo/Home/SignupMail';
 const PreOrder: NextPage = () => {
     return (
         <>
@@ -9,6 +10,7 @@ const PreOrder: NextPage = () => {
             <Link href="/">
                 <a>Home</a>
             </Link>
+            <SignupMail />
         </>
     );
 };

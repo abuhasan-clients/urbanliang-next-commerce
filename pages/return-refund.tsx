@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import SignupMail from '../components/Pagescompo/Home/SignupMail';
 import styles from '../styles/themes/Card.module.scss';
 const ReturnRefund: NextPage = () => {
     return (
@@ -29,8 +28,6 @@ const ReturnRefund: NextPage = () => {
                     </div>
                 </div>
             </div>
-
-            <SignupMail></SignupMail>
         </>
     );
 };

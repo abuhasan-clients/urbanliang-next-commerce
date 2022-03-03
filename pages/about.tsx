@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { getProductList } from '../services/redux/product/productActions';
 import { addToCart } from '../services/redux/cart/cartActions';
 import { addToWishlist } from '../services/redux/wishList/wishlistActions';
+import SignupMail from '../components/Pagescompo/Home/SignupMail';
 const About: NextPage = () => {
     const dispatch = UseAppDispatch();
     const { products, /*pages: totalPage,*/ loading }: any = UseAppSelector((state) => state.productList);
@@ -52,6 +53,7 @@ const About: NextPage = () => {
                     </button>
                 </div>
             ))}
+            <SignupMail />
         </>
     );
 };

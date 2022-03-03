@@ -75,7 +75,7 @@ const Contact: NextPage = () => {
                     </div>
                 </form>
             </div>
-            <SignupMail></SignupMail>
+            <SignupMail />
         </>
     );
 };
