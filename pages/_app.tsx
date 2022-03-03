@@ -4,6 +4,7 @@ import Layouts from '../components/Layouts/Layouts';
 import { Provider } from 'react-redux';
 import { store } from '../services/redux/store';
 import '../i18n';
+import { ToastNotify } from '../components/Layouts/Parent/ToastNotify';
 
 function MyApp({ Component, pageProps }: AppProps) {
     // if (typeof window !== 'undefined') {
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Layouts>
                 <Component {...pageProps} />
             </Layouts>
+            <ToastNotify />
         </Provider>
     );
 }
