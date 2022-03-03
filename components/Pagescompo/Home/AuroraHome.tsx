@@ -7,7 +7,7 @@ const AuroraHome: NextPage = () => {
             <div className="grid lg:grid-cols-2 md:grid-cols-2 ">
                 <div className="bestSellerBigCard">
                     {/* <!-- card with image --> */}
-                    <div className="max-w-lg  overflow-hidden mb-5">
+                    <div className="  overflow-hidden mb-5  ">
                         <img
                             className="w-full"
                             src="https://femina.wwmindia.com/content/2021/jul/dress-091627300860.jpg"
@@ -25,7 +25,7 @@ const AuroraHome: NextPage = () => {
                 </div>
                 <div className="px-4">
                     <div className="grid lg:grid-cols-2 md:grid-cols-1 px-4 ">
-                        <div className="max-w-xs rounded overflow-hidden shadow-lg">
+                        <div className="max-w-xs rounded overflow-hidden pl-5  ">
                             <img
                                 className="w-full"
                                 src="https://femina.wwmindia.com/content/2021/jul/dress-091627300860.jpg"
@@ -41,7 +41,7 @@ const AuroraHome: NextPage = () => {
                             <div className="px-6 pt-4 pb-2"></div>
                         </div>
                         {/*  */}
-                        <div className="max-w-xs rounded overflow-hidden shadow-lg">
+                        <div className="max-w-xs rounded overflow-hidden pl-5">
                             <img
                                 className="w-full"
                                 src="https://femina.wwmindia.com/content/2021/jul/dress-091627300860.jpg"
