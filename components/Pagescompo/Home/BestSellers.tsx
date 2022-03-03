@@ -50,9 +50,6 @@ const BestSellers: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.borderDe}>
-                <div className="  border border-inherit"></div>
-            </div>
         </>
     );
 };

@@ -4,6 +4,9 @@ import styles from '../../../styles/themes/Card.module.scss';
 const SignupMail: NextPage = () => {
     return (
         <>
+            <div className={styles.borderDe}>
+                <div className="  border border-inherit"></div>
+            </div>
             <p className="mt-2 text-4xl leading-8  tracking-tight text-gray sm:text-4xl flex items-center justify-center">
                 SIGN UP TO OUR MAILING LIST{' '}
             </p>{' '}
