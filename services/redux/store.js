@@ -4,14 +4,14 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './rootReducer';
 
 // ==============================|| REDUX - MAIN STORE ||============================== //
-const userInfo = (valueName: any) => {
+const userInfo = (valueName) => {
     if (typeof window !== 'undefined') {
         const getItem = localStorage.getItem(valueName);
         const results = getItem ? JSON.parse(localStorage.getItem(valueName) || '{}') : null;
         return results;
     }
 };
-const cartWishItems = (valueName: any) => {
+const cartWishItems = (valueName) => {
     if (typeof window !== 'undefined') {
         const getItem = localStorage.getItem(valueName);
         const results = getItem ? JSON.parse(localStorage.getItem(valueName) || '[]') : [];
@@ -27,16 +27,7 @@ const wishlistItemsFromStorage = cartWishItems('wishlistItems');
 
 const middleware = [thunk];
 
-type initialType = {
-    userLogin: {
-        user: any;
-    };
-    cart: any;
-    wishlist: {
-        wishlistItems: any;
-    };
-};
-const initial: initialType = {
+const initial = {
     userLogin: { user: userInfoFromStorage },
     cart: {
         cartItems: cartItemsFromStorage
@@ -50,8 +41,5 @@ const initial: initialType = {
 
 const store = createStore(rootReducer, initial, composeWithDevTools(applyMiddleware(...middleware)));
 const persister = 'Free';
-
-export type StoreRootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
 
 export { store, persister };
