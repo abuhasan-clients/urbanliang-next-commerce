@@ -16,7 +16,7 @@ export const addToCart = (id: string, quantity: any) => async (dispatch: any, ge
             }
         });
 
-        localStorage.setItem('shopkpr_cartItems', JSON.stringify(getState().cart.cartItems));
+        localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
     } catch (err) {
         console.error(err.message);
     }
@@ -29,7 +29,7 @@ export const removeCartItem = (id: string) => async (dispatch: any, getState: an
             payload: id
         });
 
-        localStorage.setItem('shopkpr_cartItems', JSON.stringify(getState().cart.cartItems));
+        localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
     } catch (err) {
         console.error(err.message);
     }
@@ -42,7 +42,7 @@ export const saveShippingAddress = (data: any) => async (dispatch: any) => {
             payload: data
         });
 
-        localStorage.setItem('shopkpr_shippingAddress', JSON.stringify(data));
+        localStorage.setItem('shippingAddress', JSON.stringify(data));
     } catch (err) {
         console.error(err.message);
     }
@@ -55,7 +55,7 @@ export const savePaymentMethod = (data: any) => async (dispatch: any) => {
             payload: data
         });
 
-        localStorage.setItem('shopkpr_paymentMethod', JSON.stringify(data));
+        localStorage.setItem('paymentMethod', JSON.stringify(data));
     } catch (err) {
         console.error(err.message);
     }
@@ -65,7 +65,7 @@ export const cartReset = () => (dispatch: any) => {
     try {
         dispatch({ type: CART_RESET });
 
-        localStorage.removeItem('shopkpr_cartItems');
+        localStorage.removeItem('cartItems');
     } catch (err) {
         console.error(err.message);
     }

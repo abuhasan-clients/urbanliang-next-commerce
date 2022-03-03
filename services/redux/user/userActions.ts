@@ -14,7 +14,7 @@ import {
 } from './userType';
 
 export const logout = () => (dispatch: any) => {
-    localStorage.removeItem('shopkpr_userInfo');
+    localStorage.removeItem('userInfo');
     dispatch({ type: USER_LOGOUT });
 };
 
@@ -31,7 +31,7 @@ export const login = (email: string, password: any) => async (dispatch: any) => 
         const { data } = await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/users/login`, { email, password }, config);
         dispatch({ type: USER_LOGIN_SUCCESS, payload: data });
         toast.success('Logged in successfully');
-        localStorage.setItem('shopkpr_userInfo', JSON.stringify(data));
+        localStorage.setItem('userInfo', JSON.stringify(data));
     } catch (err) {
         const error = err.response && err.response.data.message ? err.response.data.message : err.message;
         toast.error(error);
@@ -81,7 +81,7 @@ export const userActivation = (token: any) => async (dispatch: any) => {
         dispatch({ type: USER_LOGIN_SUCCESS, payload: data });
         toast.success('User activation successful');
 
-        localStorage.setItem('shopkpr_userInfo', JSON.stringify(data));
+        localStorage.setItem('userInfo', JSON.stringify(data));
     } catch (err) {
         const error = err.response && err.response.data.message ? err.response.data.message : err.message;
         dispatch({
