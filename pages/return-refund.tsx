@@ -16,7 +16,8 @@ const ReturnRefund: NextPage = () => {
                     {' '}
                     It is a long established fact that a reader will be distracted by the readable content of.
                 </p>
-                <div className="grid grid-cols-3 place-items-center  flex items-center justify-center">
+
+                <div className="grid grid-cols-3 place-items-center  ">
                     <div>
                         <h1 className={styles.extraB}>1</h1>
                         <div className="p-0 border-b-8 "></div>
@@ -28,6 +29,17 @@ const ReturnRefund: NextPage = () => {
                         <h1 className={styles.extraB}>3</h1>
                     </div>
                 </div>
+
+                <h1 className="mt-8   text-5xl tracking-tight text-gray  flex items-center justify-center">3 WAYS TO RETURN OR EXCHANGE</h1>
+                <div className=" flex items-center justify-center place-items-center mt-8 mb-5 ">
+                    <h1 className="  text-5xl tracking-tight text-gray  flex items-center justify-center " id={styles.wayCircle}>
+                        1
+                    </h1>
+                </div>
+                <h1 className="mt-8    tracking-tight text-gray  flex items-center justify-center">FREE RETURN /EXCHANGE/REFUND</h1>
+                <h1 className="mt-8   tracking-tight text-gray-700 " id={styles.Freturn}>
+                    FREE RETURN /EXCHANGE/REFUND, CONDITION MAY APPLY
+                </h1>
             </div>
             <SignupMail />
         </>
