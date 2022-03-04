@@ -1,12 +1,21 @@
 import type { NextPage } from 'next';
+import { useRouter } from 'next/router';
 import SignupMail from '../components/Pagescompo/Home/SignupMail';
 
 const Contact: NextPage = () => {
+    const { pathname } = useRouter();
+
     return (
         <>
             <div className="container max-w-xl mx-auto flex-1 flex flex-col items-center justify-center">
-                <h1 className="text-4xl leading-8 mt-5  tracking-tight text-gray sm:text-4xl flex items-center justify-center ">CONTACT</h1>
-                <p className="flex items-center  text-gray  justify-center mb-5 ">How can we help ?</p>
+                {pathname === '/contact' && (
+                    <>
+                        <h1 className="text-4xl leading-8 mt-5  tracking-tight text-gray sm:text-4xl flex items-center justify-center ">
+                            CONTACT
+                        </h1>
+                        <p className="flex items-center  text-gray  justify-center mb-5 ">How can we help ?</p>
+                    </>
+                )}
                 <form className="w-full max-w-xl">
                     <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -75,7 +84,7 @@ const Contact: NextPage = () => {
                     </div>
                 </form>
             </div>
-            <SignupMail />
+            {pathname === '/contact' && <SignupMail />}
         </>
     );
 };
