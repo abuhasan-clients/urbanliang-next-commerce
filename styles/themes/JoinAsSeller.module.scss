@@ -1,0 +1,84 @@
+#joinAsSeller{
+color: gray;
+font-weight:400 !important;
+}
+#storeIcon{
+    // font-size: 100px;
+    height: 100px;
+    width: 500px;
+}
+#hassleText{
+    color: gray;
+    font-size: 15px;
+    font-weight: 400;
+}
+#brandText{
+    font-size: 30px;
+}
+#applyBtn{
+height: 63px;
+width: 200px;
+    color: white;
+    background: #669681;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+
+}
+.Number{
+    font-size: 162px;
+    padding: 0;
+}
+#numberBorder{
+    height: 3px;
+    width: 165px;
+    background: rgb(192, 189, 189);
+  margin-left: 23%;
+
+}
+@media only screen and (max-width: 762px) {
+    #numberBorder{
+        height: 3px;
+        width: 165px;
+        background: rgb(192, 189, 189);
+      margin-left: 35%;
+    
+    }
+  }
+  @media only screen and (max-width: 406px) {
+    #numberBorder{
+        height: 3px;
+        width: 165px;
+        background: rgb(192, 189, 189);
+      margin-left: 28%;
+    
+    }
+  }
+  @media only screen and (max-width: 482px) {
+    #numberBorder{
+        height: 3px;
+        width: 165px;
+        background: rgb(192, 189, 189);
+      margin-left: 25%;
+    
+    }
+  }
+  @media only screen and (max-width: 374px) {
+    #numberBorder{
+        height: 3px;
+        width: 165px;
+        background: rgb(192, 189, 189);
+      margin-left: 19%;
+    
+    }
+  }
+#NumberExp{
+    font-size: 17px;
+
+color: gray;
+
+}
+#rr{
+    width: 100%;
+    height: 120px;
+}

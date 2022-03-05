@@ -28,8 +28,11 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/themes/index.js"
-, "services/redux/store.js"  ],
+    "components/themes/index.js",
+    "services/redux/store.js",
+    "pages/my-account/index.tsx",
+    "pages/my-account/feed.tsx"
+  ],
   "exclude": [
     "node_modules"
   ]

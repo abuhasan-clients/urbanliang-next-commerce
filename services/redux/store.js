@@ -19,7 +19,7 @@ const cartWishItems = (valueName) => {
     }
 };
 
-const userInfoFromStorage = userInfo('userInfo');
+export const getUserInfo = userInfo('userInfo');
 const cartItemsFromStorage = cartWishItems('cartItems');
 const wishlistItemsFromStorage = cartWishItems('wishlistItems');
 // const shippingAddressFromStorage = localStorage.getItem('shippingAddress') ? JSON.parse(localStorage.getItem('shippingAddress')) : {};
@@ -28,7 +28,7 @@ const wishlistItemsFromStorage = cartWishItems('wishlistItems');
 const middleware = [thunk];
 
 const initial = {
-    userLogin: { user: userInfoFromStorage },
+    userLogin: { user: getUserInfo },
     cart: {
         cartItems: cartItemsFromStorage
         // shippingAddress: shippingAddressFromStorage,
