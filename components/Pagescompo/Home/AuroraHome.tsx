@@ -7,9 +7,9 @@ const AuroraHome: NextPage = () => {
             {/* <!-- component --> */}
             <div className=" px-4 ">
                 <div className="mx-auto container">
-                    <div tabIndex="0" aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
+                    <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
                         <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                            <div tabIndex="0" className="focus:outline-none" aria-label="card 1">
+                            <div className="focus:outline-none" aria-label="card 1">
                                 <img
                                     role="img"
                                     aria-label="code editor"
@@ -32,9 +32,8 @@ const AuroraHome: NextPage = () => {
                             </div>
                             <div>
                                 <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                    <div tabIndex="0" className="focus:outline-none" aria-label="card 2" id="card3">
+                                    <div className="focus:outline-none" aria-label="card 2" id="card3">
                                         <img
-                                            tabIndex="0"
                                             role="img"
                                             aria-label="gaming"
                                             className="focus:outline-none focus:outline-none img3"
@@ -55,9 +54,8 @@ const AuroraHome: NextPage = () => {
                                         </div>
                                     </div>
 
-                                    <div tabIndex="0" className="focus:outline-none" aria-label="card 3" id="card3">
+                                    <div className="focus:outline-none" aria-label="card 3" id="card3">
                                         <img
-                                            tabIndex="0"
                                             role="img"
                                             aria-label="gaming"
                                             className="focus:outline-none focus:outline-none img3"
@@ -80,9 +78,8 @@ const AuroraHome: NextPage = () => {
                                 </div>
 
                                 <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                    <div tabIndex="0" className="focus:outline-none" aria-label="card 4" id="card3">
+                                    <div className="focus:outline-none" aria-label="card 4" id="card3">
                                         <img
-                                            tabIndex="0"
                                             role="img"
                                             aria-label="gaming"
                                             className="focus:outline-none focus:outline-none img3"
@@ -103,9 +100,8 @@ const AuroraHome: NextPage = () => {
                                         </div>
                                     </div>
 
-                                    <div tabIndex="0" className="focus:outline-none" aria-label="card 5" id="card3">
+                                    <div className="focus:outline-none" aria-label="card 5" id="card3">
                                         <img
-                                            tabIndex="0"
                                             role="img"
                                             aria-label="gaming"
                                             className="focus:outline-none focus:outline-none img3"
@@ -132,13 +128,12 @@ const AuroraHome: NextPage = () => {
                     {/* home appliance start from here */}
                     <h1 className=" mt-2 text-3xl leading-8 font-bold tracking-tight sm:text-4xl">SHOP HOME</h1>
 
-                    <div tabIndex="0" aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
+                    <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
                         <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
                             <div>
                                 <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                    <div tabIndex="0" className="focus:outline-none" aria-label="card 2" id="card3">
+                                    <div className="focus:outline-none" aria-label="card 2" id="card3">
                                         <img
-                                            tabIndex="0"
                                             role="img"
                                             aria-label="gaming"
                                             className="focus:outline-none focus:outline-none img3"
@@ -159,9 +154,8 @@ const AuroraHome: NextPage = () => {
                                         </div>
                                     </div>
 
-                                    <div tabIndex="0" className="focus:outline-none" aria-label="card 3" id="card3">
+                                    <div className="focus:outline-none" aria-label="card 3" id="card3">
                                         <img
-                                            tabIndex="0"
                                             role="img"
                                             aria-label="gaming"
                                             className="focus:outline-none focus:outline-none img3"
@@ -184,9 +178,8 @@ const AuroraHome: NextPage = () => {
                                 </div>
 
                                 <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                    <div tabIndex="0" className="focus:outline-none" aria-label="card 4" id="card3">
+                                    <div className="focus:outline-none" aria-label="card 4" id="card3">
                                         <img
-                                            tabIndex="0"
                                             role="img"
                                             aria-label="gaming"
                                             className="focus:outline-none focus:outline-none img3"
@@ -207,9 +200,8 @@ const AuroraHome: NextPage = () => {
                                         </div>
                                     </div>
 
-                                    <div tabIndex="0" className="focus:outline-none" aria-label="card 5" id="card3">
+                                    <div className="focus:outline-none" aria-label="card 5" id="card3">
                                         <img
-                                            tabIndex="0"
                                             role="img"
                                             aria-label="gaming"
                                             className="focus:outline-none focus:outline-none img3"
@@ -231,7 +223,7 @@ const AuroraHome: NextPage = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div tabIndex="0" className="focus:outline-none" aria-label="card 1">
+                            <div className="focus:outline-none" aria-label="card 1">
                                 <img
                                     role="img"
                                     aria-label="code editor"
