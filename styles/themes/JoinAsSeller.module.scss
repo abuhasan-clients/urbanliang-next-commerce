@@ -36,6 +36,24 @@ width: 200px;
   margin-left: 23%;
 
 }
+@media only screen and (max-width: 762px) {
+    #numberBorder{
+        height: 3px;
+        width: 165px;
+        background: rgb(192, 189, 189);
+      margin-left: 35%;
+    
+    }
+  }
+  @media only screen and (max-width: 406px) {
+    #numberBorder{
+        height: 3px;
+        width: 165px;
+        background: rgb(192, 189, 189);
+      margin-left: 28%;
+    
+    }
+  }
 #NumberExp{
     font-size: 17px;
 

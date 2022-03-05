@@ -6,14 +6,20 @@ import { HiOutlineShare } from 'react-icons/hi';
 import { MdOutlineMoneyOff } from 'react-icons/md';
 import { RiStore2Line } from 'react-icons/ri';
 import SignupMail from '../components/Pagescompo/Home/SignupMail';
-// import { FaRegHeart } from 'react-icons/fa';
-// import { FaRegHeart } from 'react-icons/fa';
+import Banner from '../components/Reuseable/Banner';
 import styles from '../styles/themes/JoinAsSeller.module.scss';
 
 const JoinAsSeller: NextPage = () => {
     return (
         <>
-            {/* <Banner></Banner>  */}
+            <Banner
+                layer
+                defaultInfo
+                images="https://cdn.mos.cms.futurecdn.net/yCPyoZDQBBcXikqxkeW2jJ-1200-80.jpg"
+                title="READY TO EMBRACE THE WORLD"
+                classNam="lg:text-right w-full pr-8 md:text-center"
+                description="Sell direct to the whole world by LOVIE Aurora"
+            />
 
             <h1 className="mt-8   text-5xl tracking-tight text-gray  flex items-center justify-center">WHAT IS LOVIE AURORA?</h1>
             <p className=" mt-5   text-xl flex items-center justify-center">
@@ -163,10 +169,10 @@ const JoinAsSeller: NextPage = () => {
                             <h3 className="pt-4 mb-2 text-2xl flex items-center justify-center ">
                                 <MdOutlineMoneyOff id={styles.storeIcon} />
                             </h3>
-                            <p className="text-sm  mb-8 mt-8" id={styles.brandText}>
+                            <p className="text-sm  mb-12 mt-8" id={styles.brandText}>
                                 NO UPFRONT FEES
                             </p>
-                            <p className="text-md">
+                            <p className="text-lg text-gray-700">
                                 Lovie aurora is commited to offering our service for zero financial investment for creators to start selling
                                 with us.
                             </p>
