@@ -11,6 +11,7 @@ const Home: NextPage = () => {
         <>
             <PageSeo title={`Home — `} />
             {/* <h4 className="">{t('name')}</h4> */}
+
             <Banner
                 layer
                 defaultInfo
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
                 title="OUR BEST, CHOSEN BY YOU"
                 icon="fa-solid fa-heart-pulse"
             />
+
             <AuroraHome />
             {/* <BestSellers /> */}
             <SignupMail />
