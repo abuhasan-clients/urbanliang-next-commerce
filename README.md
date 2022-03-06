@@ -2,7 +2,6 @@
 
 ## [Live link : abu-next-commerce.vercel.app][LiveLink]
 
-### [Adobe Xd Design Link][XD]
 ### [Adobe Xd Flow][XD2]
 ____________________________
 ### Folder Structure
@@ -26,7 +25,6 @@ ____________________________
 <!-- Links -->
 
 [LiveLink]: https://abu-next-commerce.vercel.app
-[XD]: https://xd.adobe.com/view/59b6d84e-0dd5-410b-aec5-bdf1b3da7334-0ce5/
 [XD2]: https://xd.adobe.com/view/59b6d84e-0dd5-410b-aec5-bdf1b3da7334-0ce5/grid/
 [FarmerMotion]: https://www.framer.com/docs/examples
 [talwindscss]: https://www.tallwindcss.com
