@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
-import { PageSeo } from '../components/Seo/PageSeo';
 import Link from 'next/link';
-import Loader from '../components/Layouts/Parent/Loader';
-import { UseAppDispatch, UseAppSelector } from '../services/hooks/hooks';
 import { useEffect } from 'react';
-import { getProductList } from '../services/redux/product/productActions';
-import { addToCart } from '../services/redux/cart/cartActions';
-import { addToWishlist } from '../services/redux/wishList/wishlistActions';
-import SignupMail from '../components/Pagescompo/Home/SignupMail';
+import Loader from '../../components/Layouts/Parent/Loader';
+import SignupMail from '../../components/Pagescompo/Home/SignupMail';
+import { PageSeo } from '../../components/Seo/PageSeo';
+import { UseAppDispatch, UseAppSelector } from '../../services/hooks/hooks';
+import { addToCart } from '../../services/redux/cart/cartActions';
+import { getProductList } from '../../services/redux/product/productActions';
+import { addToWishlist } from '../../services/redux/wishList/wishlistActions';
 const About: NextPage = () => {
     const dispatch = UseAppDispatch();
     const { products, /*pages: totalPage,*/ loading }: any = UseAppSelector((state) => state.productList);

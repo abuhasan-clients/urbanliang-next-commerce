@@ -3,7 +3,7 @@ import { BsFillPeopleFill } from 'react-icons/bs';
 import { FaProductHunt } from 'react-icons/fa';
 import { GiWallet } from 'react-icons/gi';
 import { HiOutlineShare } from 'react-icons/hi';
-import SignupMail from '../components/Pagescompo/Home/SignupMail';
+import SignupMail from '../../components/Pagescompo/Home/SignupMail';
 // import { FaRegHeart } from 'react-icons/fa';
 // import { FaRegHeart } from 'react-icons/fa';
 import styles from '../styles/themes/JoinAsSeller.module.scss';
