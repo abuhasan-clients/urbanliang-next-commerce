@@ -4,12 +4,12 @@ import Creators from '../CreatorsVideo';
 const AuroraHome: NextPage = () => {
     return (
         <>
-            <p className="Title">BESTSELLERS</p>
+            <p className="text-5xl">BESTSELLERS</p>
 
             {/* <!-- component --> */}
             <div className=" px-4 ">
                 <div className="">
-                    <div className="lg:w-5/6 xl:w-4/5 md:w-full sm:w-full flex justify-center mx-auto ">
+                    <div className="w-full  flex justify-center mx-auto ">
                         <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
                             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
                                 <div className="focus:outline-none" aria-label="card 1">
@@ -130,9 +130,9 @@ const AuroraHome: NextPage = () => {
                         </div>
                     </div>
                     {/* home appliance start from here */}
-                    <p className="Title">SHOP HOME</p>
+                    <p className="text-5xl">SHOP HOME</p>
 
-                    <div className="lg:w-5/6 xl:w-4/5 md:w-full sm:w-full flex justify-center mx-auto ">
+                    <div className="w-full  flex justify-center mx-auto ">
                         <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
                             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
                                 <div>
@@ -253,8 +253,8 @@ const AuroraHome: NextPage = () => {
                         </div>
                     </div>
                     {/* home sho end */}
-                    <p className="Title">POPULAR STORES</p>
-                    <div className="lg:w-5/6 xl:w-4/5 md:w-full sm:w-full flex justify-center mx-auto ">
+                    <p className="text-5xl mb-12">POPULAR STORES</p>
+                    <div className=" w-full lex justify-center mx-auto ">
                         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 ">
                             <div>
                                 <img

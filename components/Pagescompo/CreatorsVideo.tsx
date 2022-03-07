@@ -3,8 +3,8 @@ import type { NextPage } from 'next';
 const Creators: NextPage = () => {
     return (
         <>
-            <p className="Title mt-12">MEET YOUR AMAZING CREATORS</p>
-            <div className="lg:w-5/6 xl:w-4/5 md:w-full sm:w-full flex justify-center mx-auto ">
+            <p className="text-5xl mt-12 mb-12">MEET YOUR AMAZING CREATORS</p>
+            <div className="w-full flex justify-center mx-auto ">
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 ">
                     <div>
                         <iframe
