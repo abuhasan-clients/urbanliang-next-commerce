@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Creators from '../CreatorsVideo';
+import PreOrder from './PreOrder';
 
 const AuroraHome: NextPage = () => {
     return (
@@ -297,6 +298,7 @@ const AuroraHome: NextPage = () => {
                     </div>
                 </div>
             </div>
+            <PreOrder></PreOrder>
             <Creators></Creators>
         </>
     );
