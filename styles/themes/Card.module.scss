@@ -46,10 +46,14 @@
     }
   }
 }
-
+.borderS{
+  margin-bottom: 5%;
+  width: 70%;
+  margin: 2% auto;
+}
 .borderDe {
   margin-bottom: 5%;
-  width: 95%;
+  width: 90%;
   margin: 2% auto;
 }
 // this is for sign up for mail part css
@@ -66,7 +70,22 @@
   margin-top: 3%;
   margin-left: 20px;
 }
+.signBtn2{
+  height: 40px;
+  color: white;
+  border-radius: 7px;
+  font-size: larger;
+  text-align: center;
 
+  width:90%;
+  background: #689581;
+  margin-top: 3%;
+  margin-left: 1px;
+
+}
+#checkBox{
+  background: rgb(103, 189, 111);
+}
 .extraB{
   font-size: 200px;
 }

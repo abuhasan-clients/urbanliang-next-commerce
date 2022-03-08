@@ -7,7 +7,7 @@ const SignupMail: NextPage = () => {
             <div className={styles.borderDe}>
                 <div className="  border border-inherit"></div>
             </div>
-            <p className="mt-2 text-4xl leading-8  tracking-tight text-gray sm:text-4xl flex items-center justify-center">
+            <p className="mt-2 sm:text-2xl  lg:text-4xl leading-8  tracking-tight text-gray sm:text-4xl flex items-center justify-center">
                 SIGN UP TO OUR MAILING LIST{' '}
             </p>{' '}
             <br />

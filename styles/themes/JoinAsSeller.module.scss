@@ -29,6 +29,17 @@ width: 200px;
     font-size: 162px;
     padding: 0;
 }
+.number1{
+  font-size: 78px;
+  width: 120px;
+  height: 120px;
+  background: #000;
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 2%;
+  
+}
 #numberBorder{
     height: 3px;
     width: 165px;
@@ -81,4 +92,17 @@ color: gray;
 #rr{
     width: 100%;
     height: 120px;
+}
+.shipping{
+  font-size: 130px;
+}
+.textGray{
+  color: gray;
+  font-weight: 200;
+}
+#refundT{
+  font-size: 17px;
+  color: gray;
+  font-weight: normal;
+
 }
