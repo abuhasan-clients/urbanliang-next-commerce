@@ -14,7 +14,7 @@ const Home: NextPage = () => {
             {/* <h4 className="">{t('name')}</h4> */}
 
             <Banner
-                images="https://media.istockphoto.com/photos/close-up-photo-of-a-bearded-man-with-a-large-smile-on-black-picture-id1223053882?k=20&m=1223053882&s=612x612&w=0&h=h2mVqfdeR85fuZqdTmVRY6qD43IvOsAiQRnDbr7SmSU="
+                images="https://images.unsplash.com/photo-1604702770018-55669959b124?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMGdpcmx8ZW58MHx8MHx8&w=1000&q=80"
                 title1="MEET THE"
                 title2="MAKERS"
                 description=""
