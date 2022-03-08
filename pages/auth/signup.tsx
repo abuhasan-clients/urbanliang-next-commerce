@@ -60,7 +60,7 @@ const SignUp: NextPage = () => {
                         <FaFacebookF className="footerIcon newLook" />
                         <FaTiktok className="footerIcon newLook" />
                     </div>
-                    <small className="mt-3 text-center mb-5 ml-5">(we'll never post without permission)</small>
+                    <small className="mt-3 text-center mb-5 ml-5">(we&apos;ll never post without permission)</small>
                 </div>
             </div>
         </>
