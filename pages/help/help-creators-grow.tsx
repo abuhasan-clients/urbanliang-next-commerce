@@ -6,7 +6,7 @@ import { HiOutlineShare } from 'react-icons/hi';
 import SignupMail from '../../components/Pagescompo/Home/SignupMail';
 // import { FaRegHeart } from 'react-icons/fa';
 // import { FaRegHeart } from 'react-icons/fa';
-import styles from '../styles/themes/JoinAsSeller.module.scss';
+import styles from '../../styles/themes/JoinAsSeller.module.scss';
 import Contact from './contact';
 
 const HelpCreatorsGrow: NextPage = () => {
