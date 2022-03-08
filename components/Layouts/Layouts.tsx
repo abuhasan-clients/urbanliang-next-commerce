@@ -7,7 +7,6 @@ import themes from '../themes';
 import Customization from '../themes/Customization';
 import MainNavBar from './MainNav/MainNavBar';
 import Footer from './Footer/Footer';
-import Head from 'next/head';
 // import { useRouter } from 'next/router';
 
 const Layouts: NextPage = ({ children }: any) => {
@@ -18,15 +17,6 @@ const Layouts: NextPage = ({ children }: any) => {
     return (
         <StyledEngineProvider injectFirst>
             <ThemeProvider theme={themes(customization)}>
-                <Head>
-                    <link
-                        rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-                        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-                        crossOrigin="anonymous"
-                        referrerPolicy="no-referrer"
-                    />
-                </Head>
                 <CssBaseline />
                 <header id="header_nav_parent">
                     <MainNavBar />
