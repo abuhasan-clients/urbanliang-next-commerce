@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import { AiFillStar } from 'react-icons/ai';
+import { BsArrowRight } from 'react-icons/bs';
 import SlickCarousel from '../../Reuseable/MainCarousel/SlickCarousel';
 import Creators from '../CreatorsVideo';
 import DealOfTheDay from './DealOfDay';
@@ -400,7 +401,10 @@ const AuroraHome: NextPage = () => {
                     <p className="text-5xl mb-12">POPULAR STORES</p>
                     <div className=" w-full lex justify-center mx-auto ">
                         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 ">
-                            <div>
+                            <div className="relative popularSdiv cursor-pointer">
+                                <p className="absolute  bottom-2 text-white right-8 px-12 py-4">
+                                    <BsArrowRight className="rightArrowP" />
+                                </p>
                                 <div className="overflow-hidden imgReSize">
                                     <img
                                         role="img"
@@ -412,7 +416,10 @@ const AuroraHome: NextPage = () => {
                                 </div>
                             </div>
 
-                            <div>
+                            <div className="relative popularSdiv cursor-pointer">
+                                <p className="absolute  bottom-2 text-white right-8 px-12 py-4">
+                                    <BsArrowRight className="rightArrowP" />
+                                </p>
                                 <div className="overflow-hidden imgReSize">
                                     <img
                                         role="img"
@@ -424,7 +431,10 @@ const AuroraHome: NextPage = () => {
                                 </div>
                             </div>
                             {/*  */}
-                            <div>
+                            <div className="relative popularSdiv cursor-pointer">
+                                <p className="absolute  bottom-2 text-white right-8 px-12 py-4">
+                                    <BsArrowRight className="rightArrowP" />
+                                </p>
                                 <div className="overflow-hidden imgReSize">
                                     <img
                                         role="img"
@@ -435,7 +445,10 @@ const AuroraHome: NextPage = () => {
                                     />
                                 </div>
                             </div>
-                            <div>
+                            <div className="relative popularSdiv cursor-pointer">
+                                <p className="absolute  bottom-2 text-white right-8 px-12 py-4">
+                                    <BsArrowRight className="rightArrowP" />
+                                </p>
                                 <div className="overflow-hidden imgReSize">
                                     <img
                                         role="img"

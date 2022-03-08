@@ -81,6 +81,7 @@ const SlickCarousel = ({
                     arrData?.map((image: any, index: number) => (
                         <div key={index} className={`inline-block ${customClass}`} aria-label="card 2">
                             <div className="overflow-hidden  h-80 ">
+                                <div className="absolute  top-0 right-0   text-white">hello</div>
                                 <img
                                     role="img"
                                     aria-label="gaming"
