@@ -4,7 +4,7 @@ const DealOfTheDay: NextPage = () => {
     return (
         <>
             <p className="text-5xl mb-8 ml-3 mt-12">DEAL OF THE DAY</p>
-            <div className="grid sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-1  px-4  mb-8 ">
+            <div className="grid sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-1 px-3 mb-8 ">
                 <div className="relative overflow-hidden  cursor-pointer">
                     <div className="imgReSize overflow-hidden">
                         <img

@@ -1,5 +1,6 @@
 .banner_wrapper {
-    height: 80vh;
+    margin-top: 20px;
+    height: 700px;
     overflow: hidden;
     .img_parent {
         position: relative;
@@ -16,10 +17,16 @@
         }
         .banner_info {
             position: absolute;
-            top: 5%;
+            // top: 33vh;
             color: #fff;
             text-shadow: 0 0 20px #000;
             font-size: 55px;
+
+            p {
+                font-size: 18px;
+                font-weight: normal;
+                max-width: 500px;
+            }
         }
     }
 }
@@ -37,15 +44,24 @@
 @media screen and (max-width: 768px) {
     .banner_wrapper {
         height: 60vh;
+
+        .banner_info {
+            top: 10vh !important;
+            left: 15vw;
+        }
     }
 }
 @media screen and (max-width: 568px) {
     .banner_wrapper {
         height: 50vh;
+
+        .banner_info {
+            top: 10vh !important;
+        }
     }
 }
 @media screen and (max-width: 468px) {
     .banner_wrapper {
-        height: 40vh;
+        height: 60vh;
     }
 }
