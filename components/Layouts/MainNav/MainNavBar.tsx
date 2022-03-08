@@ -176,10 +176,10 @@ const MainNavBar = () => {
                                 <i className="fa-solid fa-magnifying-glass" />
                             </div>
                             <div className="header_icons ml-5 flex ">
-                                <BsArrowRight className="fa-solid fa-heart-pulse i" />
-                                <BsCart className="fa-solid fa-heart-pulse i" />
-                                <BsHeart className="fa-solid fa-heart-pulse i" />
-                                <RiMessage2Fill className="fa-solid fa-heart-pulse i" />
+                                <i className="fa-solid fa-heart-pulse" />
+                                <i className="fa-solid fa-heart-pulse" />
+                                <i className="fa-solid fa-heart-pulse" />
+                                <i className="fa-solid fa-heart-pulse" />
                             </div>
                         </div>
                     </div>
