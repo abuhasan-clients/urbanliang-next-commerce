@@ -175,7 +175,7 @@ const MainNavBar = () => {
                                 <input type="text" placeholder="what are you Looking for?" />
                                 <i className="fa-solid fa-magnifying-glass" />
                             </div>
-                            <div className="header_icons ml-5 flex">
+                            <div className="header_icons ml-5 flex ">
                                 <BsArrowRight className="fa-solid fa-heart-pulse i" />
                                 <BsCart className="fa-solid fa-heart-pulse i" />
                                 <BsHeart className="fa-solid fa-heart-pulse i" />
