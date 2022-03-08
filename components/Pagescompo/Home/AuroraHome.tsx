@@ -58,6 +58,7 @@ const AuroraHome: NextPage = () => {
                 initialSlide: 2
             }
         },
+
         {
             breakpoint: 600,
             settings: {
@@ -72,7 +73,7 @@ const AuroraHome: NextPage = () => {
 
             {/* <!-- component --> */}
             <div className=" ">
-                <div className="">
+                <div className="mx-auto">
                     <div className="w-full  flex justify-center mx-auto ">
                         <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
                             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
@@ -81,8 +82,8 @@ const AuroraHome: NextPage = () => {
                                         <img
                                             role="img"
                                             aria-label="code editor"
-                                            className="focus:outline-none w-full"
-                                            src="https://images.unsplash.com/photo-1557788095-fb14c7c24bc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFzaGlvbiUyMGdpcmxzfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                                            className="focus:outline-none w-full "
+                                            src="https://images.unsplash.com/photo-1514416497375-12bed6955a25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
                                             alt="code editor"
                                         />
                                     </div>
@@ -396,6 +397,24 @@ const AuroraHome: NextPage = () => {
                             </div>
                         </div>
                     </div>
+                    {/* deal of the day */}
+                    <DealOfTheDay />
+                    {/* slider */}
+                    <h1 className="text-5xl ml-2 mb-12 mt-8">NEW ARRIVALS</h1>
+                    <SlickCarousel
+                        arrData={imgArr}
+                        arrows
+                        responsive={responsive}
+                        slidesToShow={4}
+                        pauseOnHover
+                        customClass="testCustomClass"
+                        parentClass="testParentClass"
+                        sliderListClass="testLitsClass"
+                        hasPrev={<PrevArrow />}
+                        hasNext={<NextArrow />}
+                    />
+                    {/* pre order */}
+                    <PreOrder />
                     {/* home sho end */}
                     <p className="text-5xl mb-12">POPULAR STORES</p>
                     <div className=" w-full lex justify-center mx-auto ">
@@ -424,20 +443,7 @@ const AuroraHome: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <PreOrder />
-            <DealOfTheDay />
-            <SlickCarousel
-                arrData={imgArr}
-                arrows
-                responsive={responsive}
-                slidesToShow={4}
-                pauseOnHover
-                customClass="testCustomClass"
-                parentClass="testParentClass"
-                sliderListClass="testLitsClass"
-                hasPrev={<PrevArrow />}
-                hasNext={<NextArrow />}
-            />
+
             <Creators />
         </>
     );
