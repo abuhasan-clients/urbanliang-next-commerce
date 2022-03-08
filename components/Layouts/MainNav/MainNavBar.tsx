@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useRef } from 'react';
-import { BsArrowRight, BsCart, BsHeart } from 'react-icons/bs';
-import { RiMessage2Fill } from 'react-icons/ri';
 
 const MainNavBar = () => {
     const location = useRouter();
@@ -176,10 +174,10 @@ const MainNavBar = () => {
                                 <i className="fa-solid fa-magnifying-glass" />
                             </div>
                             <div className="header_icons ml-5 flex ">
-                                <i className="fa-solid fa-heart-pulse" />
-                                <i className="fa-solid fa-heart-pulse" />
-                                <i className="fa-solid fa-heart-pulse" />
-                                <i className="fa-solid fa-heart-pulse" />
+                                <i className="fa-solid fa-right-long" />
+                                <i className="fa-solid fa-cart-shopping" />
+                                <i className="fa-regular fa-heart" />
+                                <i className="fa-regular fa-message" />
                             </div>
                         </div>
                     </div>
