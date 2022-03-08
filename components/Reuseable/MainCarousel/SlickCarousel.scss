@@ -1,32 +1,31 @@
 #slickCarouselWrapper {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    margin-right: 10px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin-right: 10px;
 }
 
-.commonArrow{
-    position: absolute;
-text-align: center;
-    background-color: red;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    padding-top: 5px;
-    color: white;
-    top: 35%;
+.commonArrow {
+  position: absolute;
+  text-align: center;
+  // background-color: #ddd;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  padding-top: 5px;
+  color: #9c9c9c;
+  top: 30%;
+  i {
+    font-size: 50px;
   }
-  .nextArrow{
-      left: 0;
-     z-index: 1;
- 
-  }
-  .prevArrow{
-right: 0;
-
-
-  }
-  .testCustomClass{
-    padding: 0 10px;
-  }
-
+}
+.nextArrow {
+  left: -20px;
+  z-index: 1;
+}
+.prevArrow {
+  right: -20px;
+}
+.testCustomClass {
+  padding: 0 10px;
+}
