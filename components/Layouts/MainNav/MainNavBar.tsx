@@ -192,48 +192,52 @@ const MainNavBar = () => {
                                         <div className="dropdown_menu">
                                             <Link href="/">
                                                 <a
-                                                    className={`nav-link ${location.pathname === '/about'
+                                                    className={`nav-link ${
+                                                        location.pathname === '/about'
                                                             ? 'activeRoute'
                                                             : location.pathname === '/home'
-                                                                ? 'activeRoute'
-                                                                : ''
-                                                        }`}
+                                                            ? 'activeRoute'
+                                                            : ''
+                                                    }`}
                                                 >
                                                     DorpItems
                                                 </a>
                                             </Link>
                                             <Link href="/">
                                                 <a
-                                                    className={`nav-link ${location.pathname === '/about'
+                                                    className={`nav-link ${
+                                                        location.pathname === '/about'
                                                             ? 'activeRoute'
                                                             : location.pathname === '/home'
-                                                                ? 'activeRoute'
-                                                                : ''
-                                                        }`}
+                                                            ? 'activeRoute'
+                                                            : ''
+                                                    }`}
                                                 >
                                                     DorpItems
                                                 </a>
                                             </Link>
                                             <Link href="/">
                                                 <a
-                                                    className={`nav-link ${location.pathname === '/about'
+                                                    className={`nav-link ${
+                                                        location.pathname === '/about'
                                                             ? 'activeRoute'
                                                             : location.pathname === '/home'
-                                                                ? 'activeRoute'
-                                                                : ''
-                                                        }`}
+                                                            ? 'activeRoute'
+                                                            : ''
+                                                    }`}
                                                 >
                                                     DorpItems
                                                 </a>
                                             </Link>
                                             <Link href="/">
                                                 <a
-                                                    className={`nav-link ${location.pathname === '/about'
+                                                    className={`nav-link ${
+                                                        location.pathname === '/about'
                                                             ? 'activeRoute'
                                                             : location.pathname === '/home'
-                                                                ? 'activeRoute'
-                                                                : ''
-                                                        }`}
+                                                            ? 'activeRoute'
+                                                            : ''
+                                                    }`}
                                                 >
                                                     DorpItems
                                                 </a>
