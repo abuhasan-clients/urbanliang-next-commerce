@@ -21,7 +21,7 @@ const Home: NextPage = () => {
                 desClassName="text-lg text-white mt-3"
                 className1="sm:text-lg  lg:text-8xl text-white"
                 className2="sm:text-lg  lg:text-8xl  text-white"
-                mainClassName="absolute  top-2 right-12 px-12 py-4"
+                mainClassName="absolute top-8 text-center  right-12 px-12 py-4"
                 class
                 icon="fa-solid fa-heart-pulse"
             />

@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import { AiFillStar } from 'react-icons/ai';
-import { BsArrowRight } from 'react-icons/bs';
 import SlickCarousel from '../../Reuseable/MainCarousel/SlickCarousel';
 import Creators from '../CreatorsVideo';
 import DealOfTheDay from './DealOfDay';
@@ -401,64 +400,26 @@ const AuroraHome: NextPage = () => {
                     <p className="text-5xl mb-12">POPULAR STORES</p>
                     <div className=" w-full lex justify-center mx-auto ">
                         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 ">
-                            <div className="relative popularSdiv cursor-pointer">
-                                <p className="absolute  bottom-2 text-white right-8 px-12 py-4">
-                                    <BsArrowRight className="rightArrowP" />
-                                </p>
-                                <div className="overflow-hidden imgReSize">
-                                    <img
-                                        role="img"
-                                        aria-label="code editor"
-                                        className="focus:outline-none w-full "
-                                        src="https://i.pinimg.com/736x/7f/8d/e4/7f8de4266996d52f2182ce462f5e7352.jpg"
-                                        alt="code editor"
-                                    />
-                                </div>
+                            <div className="popularSdiv cursor-pointer">
+                                <img
+                                    role="img"
+                                    aria-label="code editor"
+                                    className="focus:outline-none   object-cover h-96  w-full "
+                                    src="https://i.pinimg.com/736x/7f/8d/e4/7f8de4266996d52f2182ce462f5e7352.jpg"
+                                    alt="code editor"
+                                />
                             </div>
 
-                            <div className="relative popularSdiv cursor-pointer">
-                                <p className="absolute  bottom-2 text-white right-8 px-12 py-4">
-                                    <BsArrowRight className="rightArrowP" />
-                                </p>
-                                <div className="overflow-hidden imgReSize">
-                                    <img
-                                        role="img"
-                                        aria-label="code editor"
-                                        className="focus:outline-none w-full"
-                                        src="https://i.pinimg.com/originals/03/05/8b/03058b460cfb957f09a0f2fe67e61747.jpg"
-                                        alt="code editor"
-                                    />
-                                </div>
+                            <div className="  cursor-pointer">
+                                <img
+                                    role="img"
+                                    aria-label="code editor"
+                                    className="focus:outline-none overflow-hidden object-cover h-96 w-full"
+                                    src="https://i.pinimg.com/originals/03/05/8b/03058b460cfb957f09a0f2fe67e61747.jpg"
+                                    alt="code editor"
+                                />
                             </div>
                             {/*  */}
-                            <div className="relative popularSdiv cursor-pointer">
-                                <p className="absolute  bottom-2 text-white right-8 px-12 py-4">
-                                    <BsArrowRight className="rightArrowP" />
-                                </p>
-                                <div className="overflow-hidden imgReSize">
-                                    <img
-                                        role="img"
-                                        aria-label="code editor"
-                                        className="focus:outline-none w-full "
-                                        src="https://i.pinimg.com/736x/d0/b5/eb/d0b5eb601f7397bb2493815043dce201.jpg"
-                                        alt="code editor"
-                                    />
-                                </div>
-                            </div>
-                            <div className="relative popularSdiv cursor-pointer">
-                                <p className="absolute  bottom-2 text-white right-8 px-12 py-4">
-                                    <BsArrowRight className="rightArrowP" />
-                                </p>
-                                <div className="overflow-hidden imgReSize">
-                                    <img
-                                        role="img"
-                                        aria-label="code editor"
-                                        className="focus:outline-none w-full "
-                                        src="https://img.lovepik.com/background/20211029/medium/lovepik-internet-big-data-business-blue-technology-background-image_605724816.jpg"
-                                        alt="code editor"
-                                    />
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
