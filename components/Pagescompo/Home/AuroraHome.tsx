@@ -8,14 +8,14 @@ import PreOrder from './PreOrder';
 // carousel previous arrow icon on the left position
 const PrevArrow = ({ onClick }: any) => {
     return (
-        <div className="prevArrow commonArrow" onClick={onClick}>
+        <div className="prevArrow commonArrow " onClick={onClick}>
             <i className="fa-solid fa-angle-right" />
         </div>
     );
 };
 const NextArrow = ({ onClick }: any) => {
     return (
-        <div className="nextArrow commonArrow" onClick={onClick}>
+        <div className="nextArrow commonArrow " onClick={onClick}>
             <i className="fa-solid fa-angle-left" />
         </div>
     );
@@ -24,24 +24,21 @@ const NextArrow = ({ onClick }: any) => {
 const AuroraHome: NextPage = () => {
     const imgArr = [
         {
-            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
+            img: 'https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2215210/2018/1/22/11516616541193-Roadster-Men-Beige-Colourblocked-Round-Neck-T-shirt-8181516616541016-1.jpg'
         },
         {
-            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
-        },
-
-        {
-            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
+            img: 'https://media.istockphoto.com/photos/hipster-handsome-male-model-with-beard-wearing-black-blank-tshirt-picture-id925774200?k=20&m=925774200&s=170667a&w=0&h=gcmcsCGRKYilvz9HLcPEMrxoqoU78gGnqVkGGD59eDY='
         },
 
         {
-            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
+            img: 'https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2215210/2018/1/22/11516616541193-Roadster-Men-Beige-Colourblocked-Round-Neck-T-shirt-8181516616541016-1.jpg'
+        },
+
+        {
+            img: 'https://media.istockphoto.com/photos/hipster-handsome-male-model-with-beard-wearing-black-blank-tshirt-picture-id925774200?k=20&m=925774200&s=170667a&w=0&h=gcmcsCGRKYilvz9HLcPEMrxoqoU78gGnqVkGGD59eDY='
         },
         {
-            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
-        },
-        {
-            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
+            img: 'https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2215210/2018/1/22/11516616541193-Roadster-Men-Beige-Colourblocked-Round-Neck-T-shirt-8181516616541016-1.jpg'
         }
     ];
     const responsive = [
@@ -74,19 +71,21 @@ const AuroraHome: NextPage = () => {
             <p className="text-5xl">BESTSELLERS</p>
 
             {/* <!-- component --> */}
-            <div className=" px-4 ">
+            <div className=" ">
                 <div className="">
                     <div className="w-full  flex justify-center mx-auto ">
                         <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
                             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                <div className="focus:outline-none ull overflow-hidden" aria-label="card 1">
-                                    <img
-                                        role="img"
-                                        aria-label="code editor"
-                                        className="focus:outline-none w-full"
-                                        src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                        alt="code editor"
-                                    />
+                                <div className="focus:outline-none" aria-label="card 1">
+                                    <div className="ull overflow-hidden">
+                                        <img
+                                            role="img"
+                                            aria-label="code editor"
+                                            className="focus:outline-none w-full"
+                                            src="https://images.unsplash.com/photo-1557788095-fb14c7c24bc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFzaGlvbiUyMGdpcmxzfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                                            alt="code editor"
+                                        />
+                                    </div>
 
                                     <div className=" py-6 ">
                                         <p className="text-gray">CLOTH</p>
@@ -108,19 +107,27 @@ const AuroraHome: NextPage = () => {
                                 </div>
                                 <div>
                                     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                        <div className="focus:outline-none" aria-label="card 2" id="card3">
-                                            <img
-                                                role="img"
-                                                aria-label="gaming"
-                                                className="focus:outline-none focus:outline-none img3"
-                                                src="https://media.istockphoto.com/photos/handsome-latin-man-against-turquoise-background-picture-id1182055260?b=1&k=20&m=1182055260&s=170667a&w=0&h=-KvJpBmOsHK5G_1loSH-6uvtzwIH5XxNrdLrfvdE5k0="
-                                                alt="notes"
-                                            />
+                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                            <div className="overflow-hidden  h-80 ">
+                                                <img
+                                                    role="img"
+                                                    aria-label="gaming"
+                                                    className="focus:outline-none focus:outline-none  w-full"
+                                                    src="https://media.istockphoto.com/photos/hipster-handsome-male-model-with-beard-wearing-black-blank-tshirt-picture-id925774200?k=20&m=925774200&s=170667a&w=0&h=gcmcsCGRKYilvz9HLcPEMrxoqoU78gGnqVkGGD59eDY="
+                                                    alt="notes"
+                                                />
+                                            </div>
 
                                             <div className="bg-white  py-4  ">
                                                 <p className="text-gray">CLOTH</p>
                                                 <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
                                                     Ribbed Button Vest
+                                                </h1>
+                                                <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
                                                 </h1>
                                                 <small>128 Reviews</small>
 
@@ -130,19 +137,27 @@ const AuroraHome: NextPage = () => {
                                             </div>
                                         </div>
 
-                                        <div className="focus:outline-none" aria-label="card 3" id="card3">
-                                            <img
-                                                role="img"
-                                                aria-label="gaming"
-                                                className="focus:outline-none focus:outline-none img3"
-                                                src="https://media.istockphoto.com/photos/handsome-latin-man-against-turquoise-background-picture-id1182055260?b=1&k=20&m=1182055260&s=170667a&w=0&h=-KvJpBmOsHK5G_1loSH-6uvtzwIH5XxNrdLrfvdE5k0="
-                                                alt="notes"
-                                            />
+                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                            <div className="overflow-hidden  h-80 ">
+                                                <img
+                                                    role="img"
+                                                    aria-label="gaming"
+                                                    className="focus:outline-none focus:outline-none  w-full"
+                                                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2215210/2018/1/22/11516616541193-Roadster-Men-Beige-Colourblocked-Round-Neck-T-shirt-8181516616541016-1.jpg"
+                                                    alt="notes"
+                                                />
+                                            </div>
 
                                             <div className="bg-white  py-4  ">
                                                 <p className="text-gray">CLOTH</p>
                                                 <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
                                                     Ribbed Button Vest
+                                                </h1>
+                                                <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
                                                 </h1>
                                                 <small>128 Reviews</small>
 
@@ -153,20 +168,28 @@ const AuroraHome: NextPage = () => {
                                         </div>
                                     </div>
 
-                                    <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                        <div className="focus:outline-none" aria-label="card 4" id="card3">
-                                            <img
-                                                role="img"
-                                                aria-label="gaming"
-                                                className="focus:outline-none focus:outline-none img3"
-                                                src="https://images.unsplash.com/photo-1553754538-466add009c05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"
-                                                alt="notes"
-                                            />
+                                    <div className="mt-1 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                            <div className="overflow-hidden  h-80 ">
+                                                <img
+                                                    role="img"
+                                                    aria-label="gaming"
+                                                    className="focus:outline-none focus:outline-none  w-full"
+                                                    src="https://media.istockphoto.com/photos/hipster-handsome-male-model-with-beard-wearing-black-blank-tshirt-picture-id925774200?k=20&m=925774200&s=170667a&w=0&h=gcmcsCGRKYilvz9HLcPEMrxoqoU78gGnqVkGGD59eDY="
+                                                    alt="notes"
+                                                />
+                                            </div>
 
                                             <div className="bg-white  py-4  ">
                                                 <p className="text-gray">CLOTH</p>
                                                 <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
                                                     Ribbed Button Vest
+                                                </h1>
+                                                <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
                                                 </h1>
                                                 <small>128 Reviews</small>
 
@@ -176,19 +199,27 @@ const AuroraHome: NextPage = () => {
                                             </div>
                                         </div>
 
-                                        <div className="focus:outline-none" aria-label="card 5" id="card3">
-                                            <img
-                                                role="img"
-                                                aria-label="gaming"
-                                                className="focus:outline-none focus:outline-none img3"
-                                                src="https://media.istockphoto.com/photos/handsome-latin-man-against-turquoise-background-picture-id1182055260?b=1&k=20&m=1182055260&s=170667a&w=0&h=-KvJpBmOsHK5G_1loSH-6uvtzwIH5XxNrdLrfvdE5k0="
-                                                alt="notes"
-                                            />
+                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                            <div className="overflow-hidden  h-80 ">
+                                                <img
+                                                    role="img"
+                                                    aria-label="gaming"
+                                                    className="focus:outline-none focus:outline-none  w-full"
+                                                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2215210/2018/1/22/11516616541193-Roadster-Men-Beige-Colourblocked-Round-Neck-T-shirt-8181516616541016-1.jpg"
+                                                    alt="notes"
+                                                />
+                                            </div>
 
                                             <div className="bg-white  py-4  ">
                                                 <p className="text-gray">CLOTH</p>
                                                 <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
                                                     Ribbed Button Vest
+                                                </h1>
+                                                <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
                                                 </h1>
                                                 <small>128 Reviews</small>
 
@@ -210,60 +241,16 @@ const AuroraHome: NextPage = () => {
                             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
                                 <div>
                                     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                        <div className="focus:outline-none" aria-label="card 2" id="card3">
-                                            <img
-                                                role="img"
-                                                aria-label="gaming"
-                                                className="focus:outline-none focus:outline-none img3"
-                                                src="https://image.made-in-china.com/2f0j00iaERkdGyYCzq/400ml-600ml-800ml-1000ml-1200ml-Classic-Pyrex-High-Borosilicate-Glass-Home-Use-Tea-Pot-Kettle-Teapot-with-Glass-Lid-and-Filter.jpg"
-                                                alt="notes"
-                                            />
-
-                                            <div className="bg-white  py-4  ">
-                                                <p className="text-gray">CLOTH</p>
-                                                <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
-                                                    Ribbed Button Vest
-                                                </h1>
-                                                <small>128 Reviews</small>
-
-                                                <div className="reamainingDiv">
-                                                    <p className="reamaining">Reamaining:7</p>
-                                                </div>
+                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                            <div className="overflow-hidden  h-80 ">
+                                                <img
+                                                    role="img"
+                                                    aria-label="gaming"
+                                                    className="focus:outline-none focus:outline-none  w-full"
+                                                    src="https://c0.wallpaperflare.com/preview/848/38/329/pot-cup-tea-flower.jpg"
+                                                    alt="notes"
+                                                />
                                             </div>
-                                        </div>
-
-                                        <div className="focus:outline-none" aria-label="card 3" id="card3">
-                                            <img
-                                                role="img"
-                                                aria-label="gaming"
-                                                className="focus:outline-none focus:outline-none img3"
-                                                src="https://www.joyusgarden.com/wp-content/uploads/2016/04/81ew3qRioWL._SL1500_-1-1.jpg"
-                                                alt="notes"
-                                            />
-
-                                            <div className="bg-white  py-4  ">
-                                                <p className="text-gray">CLOTH</p>
-                                                <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
-                                                    Ribbed Button Vest
-                                                </h1>
-                                                <small>128 Reviews</small>
-
-                                                <div className="reamainingDiv">
-                                                    <p className="reamaining">Reamaining:7</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                        <div className="focus:outline-none" aria-label="card 4" id="card3">
-                                            <img
-                                                role="img"
-                                                aria-label="gaming"
-                                                className="focus:outline-none focus:outline-none img3"
-                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gXog50S7k76io1tvetvMXCYAxywTYTJbAw&usqp=CAU"
-                                                alt="notes"
-                                            />
 
                                             <div className="bg-white  py-4  ">
                                                 <p className="text-gray">CLOTH</p>
@@ -284,19 +271,89 @@ const AuroraHome: NextPage = () => {
                                             </div>
                                         </div>
 
-                                        <div className="focus:outline-none" aria-label="card 5" id="card3">
-                                            <img
-                                                role="img"
-                                                aria-label="gaming"
-                                                className="focus:outline-none focus:outline-none img3"
-                                                src="https://image.made-in-china.com/2f0j00iaERkdGyYCzq/400ml-600ml-800ml-1000ml-1200ml-Classic-Pyrex-High-Borosilicate-Glass-Home-Use-Tea-Pot-Kettle-Teapot-with-Glass-Lid-and-Filter.jpg"
-                                                alt="notes"
-                                            />
+                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                            <div className="overflow-hidden  h-80 ">
+                                                <img
+                                                    role="img"
+                                                    aria-label="gaming"
+                                                    className="focus:outline-none focus:outline-none  w-full"
+                                                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2215210/2018/1/22/11516616541193-Roadster-Men-Beige-Colourblocked-Round-Neck-T-shirt-8181516616541016-1.jpg"
+                                                    alt="notes"
+                                                />
+                                            </div>
 
                                             <div className="bg-white  py-4  ">
                                                 <p className="text-gray">CLOTH</p>
                                                 <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
                                                     Ribbed Button Vest
+                                                </h1>
+                                                <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                </h1>
+                                                <small>128 Reviews</small>
+
+                                                <div className="reamainingDiv">
+                                                    <p className="reamaining">Reamaining:7</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="mt-1 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                            <div className="overflow-hidden  h-80 ">
+                                                <img
+                                                    role="img"
+                                                    aria-label="gaming"
+                                                    className="focus:outline-none focus:outline-none  w-full"
+                                                    src="https://media.istockphoto.com/photos/hipster-handsome-male-model-with-beard-wearing-black-blank-tshirt-picture-id925774200?k=20&m=925774200&s=170667a&w=0&h=gcmcsCGRKYilvz9HLcPEMrxoqoU78gGnqVkGGD59eDY="
+                                                    alt="notes"
+                                                />
+                                            </div>
+
+                                            <div className="bg-white  py-4  ">
+                                                <p className="text-gray">CLOTH</p>
+                                                <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
+                                                    Ribbed Button Vest
+                                                </h1>
+                                                <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                </h1>
+                                                <small>128 Reviews</small>
+
+                                                <div className="reamainingDiv">
+                                                    <p className="reamaining">Reamaining:7</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                            <div className="overflow-hidden  h-80 ">
+                                                <img
+                                                    role="img"
+                                                    aria-label="gaming"
+                                                    className="focus:outline-none focus:outline-none  w-full"
+                                                    src="https://media.istockphoto.com/photos/hipster-handsome-male-model-with-beard-wearing-black-blank-tshirt-picture-id925774200?k=20&m=925774200&s=170667a&w=0&h=gcmcsCGRKYilvz9HLcPEMrxoqoU78gGnqVkGGD59eDY="
+                                                    alt="notes"
+                                                />
+                                            </div>
+
+                                            <div className="bg-white  py-4  ">
+                                                <p className="text-gray">CLOTH</p>
+                                                <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
+                                                    Ribbed Button Vest
+                                                </h1>
+                                                <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
                                                 </h1>
                                                 <small>128 Reviews</small>
 
@@ -308,18 +365,26 @@ const AuroraHome: NextPage = () => {
                                     </div>
                                 </div>
                                 <div className="focus:outline-none" aria-label="card 1">
-                                    <img
-                                        role="img"
-                                        aria-label="code editor"
-                                        className="focus:outline-none ull"
-                                        src="https://media.istockphoto.com/photos/set-of-contemporary-house-appliances-standing-on-reflective-surface-picture-id1279457865?k=20&m=1279457865&s=170667a&w=0&h=q3kTTUV_5r7FWQKsRFZ1hZDWqUqay20V35WT_v2zdeY="
-                                        alt="code editor"
-                                    />
+                                    <div className="ull overflow-hidden">
+                                        <img
+                                            role="img"
+                                            aria-label="code editor"
+                                            className="focus:outline-none w-full"
+                                            src="https://images.unsplash.com/photo-1557788095-fb14c7c24bc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFzaGlvbiUyMGdpcmxzfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                                            alt="code editor"
+                                        />
+                                    </div>
 
                                     <div className=" py-6 ">
                                         <p className="text-gray">CLOTH</p>
                                         <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
                                             Ribbed Button Vest
+                                        </h1>
+                                        <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                            <AiFillStar className="starReview" />
+                                            <AiFillStar className="starReview" />
+                                            <AiFillStar className="starReview" />
+                                            <AiFillStar className="starReview" />
                                         </h1>
                                         <small>128 Reviews</small>
 
@@ -336,41 +401,50 @@ const AuroraHome: NextPage = () => {
                     <div className=" w-full lex justify-center mx-auto ">
                         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 ">
                             <div>
-                                <img
-                                    role="img"
-                                    aria-label="code editor"
-                                    className="focus:outline-none imgReSize"
-                                    src="https://media.istockphoto.com/photos/set-of-contemporary-house-appliances-standing-on-reflective-surface-picture-id1279457865?k=20&m=1279457865&s=170667a&w=0&h=q3kTTUV_5r7FWQKsRFZ1hZDWqUqay20V35WT_v2zdeY="
-                                    alt="code editor"
-                                />
+                                <div className="overflow-hidden imgReSize">
+                                    <img
+                                        role="img"
+                                        aria-label="code editor"
+                                        className="focus:outline-none w-full "
+                                        src="https://i.pinimg.com/736x/7f/8d/e4/7f8de4266996d52f2182ce462f5e7352.jpg"
+                                        alt="code editor"
+                                    />
+                                </div>
                             </div>
+
                             <div>
-                                <img
-                                    role="img"
-                                    aria-label="code editor"
-                                    className="focus:outline-none imgReSize"
-                                    src="https://thumbs.dreamstime.com/b/have-wonderful-weekend-word-written-wood-block-text-wooden-table-your-desing-top-view-concept-174283020.jpg"
-                                    alt="code editor"
-                                />
+                                <div className="overflow-hidden imgReSize">
+                                    <img
+                                        role="img"
+                                        aria-label="code editor"
+                                        className="focus:outline-none w-full"
+                                        src="https://i.pinimg.com/originals/03/05/8b/03058b460cfb957f09a0f2fe67e61747.jpg"
+                                        alt="code editor"
+                                    />
+                                </div>
                             </div>
                             {/*  */}
                             <div>
-                                <img
-                                    role="img"
-                                    aria-label="code editor"
-                                    className="focus:outline-none imgReSize"
-                                    src="https://www.constructionweekonline.com/cloud/2021/07/07/img-worlds-of-adventure.jpg"
-                                    alt="code editor"
-                                />
+                                <div className="overflow-hidden imgReSize">
+                                    <img
+                                        role="img"
+                                        aria-label="code editor"
+                                        className="focus:outline-none w-full "
+                                        src="https://i.pinimg.com/736x/d0/b5/eb/d0b5eb601f7397bb2493815043dce201.jpg"
+                                        alt="code editor"
+                                    />
+                                </div>
                             </div>
                             <div>
-                                <img
-                                    role="img"
-                                    aria-label="code editor"
-                                    className="focus:outline-none imgReSize"
-                                    src="https://s7d9.scene7.com/is/image/HoltRenfrew1/m_4310339348_02"
-                                    alt="code editor"
-                                />
+                                <div className="overflow-hidden imgReSize">
+                                    <img
+                                        role="img"
+                                        aria-label="code editor"
+                                        className="focus:outline-none w-full "
+                                        src="https://img.lovepik.com/background/20211029/medium/lovepik-internet-big-data-business-blue-technology-background-image_605724816.jpg"
+                                        alt="code editor"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

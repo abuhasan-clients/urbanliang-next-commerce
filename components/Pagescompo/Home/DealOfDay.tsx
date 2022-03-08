@@ -6,11 +6,13 @@ const DealOfTheDay: NextPage = () => {
             <p className="text-5xl mb-8 ml-3 mt-12">DEAL OF THE DAY</p>
             <div className="grid sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-1  px-4  mb-8 ">
                 <div className="relative overflow-hidden  cursor-pointer">
-                    <img
-                        className="object-cover w-full imgReSize"
-                        src="https://media.istockphoto.com/photos/close-up-photo-of-a-bearded-man-with-a-large-smile-on-black-picture-id1223053882?k=20&m=1223053882&s=612x612&w=0&h=h2mVqfdeR85fuZqdTmVRY6qD43IvOsAiQRnDbr7SmSU="
-                        alt="Flower and sky"
-                    />
+                    <div className="imgReSize overflow-hidden">
+                        <img
+                            className="w-full "
+                            src="https://i.pinimg.com/736x/23/5c/d1/235cd179e3eec4cd5efb74e2a887b292.jpg"
+                            alt="Flower and sky"
+                        />
+                    </div>
 
                     <div className="absolute  bottom-0 left-0 px-12 py-4">
                         <p className="text-white">CLOTH</p>

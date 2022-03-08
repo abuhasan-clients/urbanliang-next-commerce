@@ -7,13 +7,15 @@ const PreOrder: NextPage = () => {
             <p className="text-5xl mb-12 ml-3 mt-12">PRE-ORDER</p>
             <div className="grid sm:grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 pb-6 px-4   ">
                 <div className="focus:outline-none cardAll  creatorBlogCard" aria-label="card 2" id=" ">
-                    <img
-                        role="img"
-                        aria-label="gaming"
-                        className="focus:outline-none focus:outline-none imgSize"
-                        src="https://res-3.cloudinary.com/fieldfisher/image/upload/c_lfill,g_auto/f_auto,q_auto/v1/sectors/technology/tech_neoncircuitboard_857021704_medium_lc5h05"
-                        alt="notes"
-                    />
+                    <div className="overflow-hidden imgSize ">
+                        <img
+                            role="img"
+                            aria-label="gaming"
+                            className="focus:outline-none focus:outline-none "
+                            src="https://res-3.cloudinary.com/fieldfisher/image/upload/c_lfill,g_auto/f_auto,q_auto/v1/sectors/technology/tech_neoncircuitboard_857021704_medium_lc5h05"
+                            alt="notes"
+                        />
+                    </div>
 
                     <div className="  py-3 grid grid-cols-2 ">
                         <div className="">
@@ -35,13 +37,15 @@ const PreOrder: NextPage = () => {
                     </div>
                 </div>
                 <div className="focus:outline-none cardAll  creatorBlogCard" aria-label="card 2" id=" ">
-                    <img
-                        role="img"
-                        aria-label="gaming"
-                        className="focus:outline-none focus:outline-none imgSize"
-                        src="https://www.who.int/images/default-source/departments/essential-medicines/int-pharmacopeia/717.jpg?sfvrsn=eea7d75a_15"
-                        alt="notes"
-                    />
+                    <div className="overflow-hidden imgSize ">
+                        <img
+                            role="img"
+                            aria-label="gaming"
+                            className="focus:outline-none focus:outline-none "
+                            src="https://i.pinimg.com/736x/f5/ce/20/f5ce20e9215e15d43aa1a006aedf435a.jpg"
+                            alt="notes"
+                        />
+                    </div>
 
                     <div className="  py-3 grid grid-cols-2 ">
                         <div className="">
