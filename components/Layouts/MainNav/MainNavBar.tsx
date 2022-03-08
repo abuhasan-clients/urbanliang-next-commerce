@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useRef } from 'react';
-import { BsArrowRight, BsCart, BsHeart } from 'react-icons/bs';
-import { RiMessage2Fill } from 'react-icons/ri';
 
 const MainNavBar = () => {
     const location = useRouter();
@@ -175,11 +173,11 @@ const MainNavBar = () => {
                                 <input type="text" placeholder="what are you Looking for?" />
                                 <i className="fa-solid fa-magnifying-glass" />
                             </div>
-                            <div className="header_icons ml-5">
-                                <BsArrowRight className="fa-solid fa-heart-pulse i" />
-                                <BsCart className="fa-solid fa-heart-pulse i" />
-                                <BsHeart className="fa-solid fa-heart-pulse i" />
-                                <RiMessage2Fill className="fa-solid fa-heart-pulse i" />
+                            <div className="header_icons ml-5 flex ">
+                                <i className="fa-solid fa-right-long" />
+                                <i className="fa-solid fa-cart-shopping" />
+                                <i className="fa-regular fa-heart" />
+                                <i className="fa-regular fa-message" />
                             </div>
                         </div>
                     </div>
@@ -192,48 +190,52 @@ const MainNavBar = () => {
                                         <div className="dropdown_menu">
                                             <Link href="/">
                                                 <a
-                                                    className={`nav-link ${location.pathname === '/about'
+                                                    className={`nav-link ${
+                                                        location.pathname === '/about'
                                                             ? 'activeRoute'
                                                             : location.pathname === '/home'
-                                                                ? 'activeRoute'
-                                                                : ''
-                                                        }`}
+                                                            ? 'activeRoute'
+                                                            : ''
+                                                    }`}
                                                 >
                                                     DorpItems
                                                 </a>
                                             </Link>
                                             <Link href="/">
                                                 <a
-                                                    className={`nav-link ${location.pathname === '/about'
+                                                    className={`nav-link ${
+                                                        location.pathname === '/about'
                                                             ? 'activeRoute'
                                                             : location.pathname === '/home'
-                                                                ? 'activeRoute'
-                                                                : ''
-                                                        }`}
+                                                            ? 'activeRoute'
+                                                            : ''
+                                                    }`}
                                                 >
                                                     DorpItems
                                                 </a>
                                             </Link>
                                             <Link href="/">
                                                 <a
-                                                    className={`nav-link ${location.pathname === '/about'
+                                                    className={`nav-link ${
+                                                        location.pathname === '/about'
                                                             ? 'activeRoute'
                                                             : location.pathname === '/home'
-                                                                ? 'activeRoute'
-                                                                : ''
-                                                        }`}
+                                                            ? 'activeRoute'
+                                                            : ''
+                                                    }`}
                                                 >
                                                     DorpItems
                                                 </a>
                                             </Link>
                                             <Link href="/">
                                                 <a
-                                                    className={`nav-link ${location.pathname === '/about'
+                                                    className={`nav-link ${
+                                                        location.pathname === '/about'
                                                             ? 'activeRoute'
                                                             : location.pathname === '/home'
-                                                                ? 'activeRoute'
-                                                                : ''
-                                                        }`}
+                                                            ? 'activeRoute'
+                                                            : ''
+                                                    }`}
                                                 >
                                                     DorpItems
                                                 </a>

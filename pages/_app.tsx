@@ -1,4 +1,5 @@
 import '../styles/globals.scss';
+
 import type { AppProps } from 'next/app';
 import Layouts from '../components/Layouts/Layouts';
 import { Provider } from 'react-redux';

@@ -9,14 +9,14 @@ import PreOrder from './PreOrder';
 const PrevArrow = ({ onClick }: any) => {
     return (
         <div className="prevArrow commonArrow " onClick={onClick}>
-            <i className="fa-solid fa-angle-right" />
+            <i className="fa-solid fa-caret-right" />
         </div>
     );
 };
 const NextArrow = ({ onClick }: any) => {
     return (
         <div className="nextArrow commonArrow " onClick={onClick}>
-            <i className="fa-solid fa-angle-left" />
+            <i className="fa-solid fa-caret-left" />
         </div>
     );
 };
