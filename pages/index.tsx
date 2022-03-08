@@ -16,9 +16,20 @@ const Home: NextPage = () => {
             <Banner
                 layer
                 image="https://images.unsplash.com/photo-1604702770018-55669959b124?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMGdpcmx8ZW58MHx8MHx8&w=1000&q=80"
-                defaultInfo
+                rightInfo
                 icon="fa-solid fa-heart-pulse"
-                title="MEET THE MAKERS"
+                title={
+                    <h5>
+                        MEET THE <br /> MAKERS
+                    </h5>
+                }
+                desc={
+                    <p>
+                        We&sbquo;re LOVIE AURORA, a company-driven online marketplace that connects you with unique, exciting creators and
+                        their products from all over the world
+                    </p>
+                }
+                defaultClasses="rightInfo absolute right-20 top-40"
             />
 
             <AuroraHome />
