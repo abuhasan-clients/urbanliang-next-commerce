@@ -1,5 +1,8 @@
 import type { NextPage } from 'next';
+import { AiFillStar } from 'react-icons/ai';
 import Creators from '../CreatorsVideo';
+import Autction from './Auction';
+import DealOfTheDay from './DealOfDay';
 import PreOrder from './PreOrder';
 
 const AuroraHome: NextPage = () => {
@@ -26,6 +29,12 @@ const AuroraHome: NextPage = () => {
                                         <p className="text-gray">CLOTH</p>
                                         <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
                                             Ribbed Button Vest
+                                        </h1>
+                                        <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                            <AiFillStar className="starReview" />
+                                            <AiFillStar className="starReview" />
+                                            <AiFillStar className="starReview" />
+                                            <AiFillStar className="starReview" />
                                         </h1>
                                         <small>128 Reviews</small>
 
@@ -198,6 +207,12 @@ const AuroraHome: NextPage = () => {
                                                 <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
                                                     Ribbed Button Vest
                                                 </h1>
+                                                <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                    <AiFillStar className="starReview" />
+                                                </h1>
                                                 <small>128 Reviews</small>
 
                                                 <div className="reamainingDiv">
@@ -299,6 +314,8 @@ const AuroraHome: NextPage = () => {
                 </div>
             </div>
             <PreOrder></PreOrder>
+            <DealOfTheDay></DealOfTheDay>
+            <Autction></Autction>
             <Creators></Creators>
         </>
     );

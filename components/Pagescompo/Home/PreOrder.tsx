@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import { AiFillStar } from 'react-icons/ai';
+
 const PreOrder: NextPage = () => {
     return (
         <>
@@ -10,16 +11,27 @@ const PreOrder: NextPage = () => {
                         role="img"
                         aria-label="gaming"
                         className="focus:outline-none focus:outline-none imgSize"
-                        src="https://download-oem-software.com/wp-content/uploads/2021/12/Technology.jpg"
+                        src="https://res-3.cloudinary.com/fieldfisher/image/upload/c_lfill,g_auto/f_auto,q_auto/v1/sectors/technology/tech_neoncircuitboard_857021704_medium_lc5h05"
                         alt="notes"
                     />
 
-                    <div className="bg-white  py-3  ">
-                        <p className="text-gray text-xl mt-3">Title Of The Blog Post</p>
-                        <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider"></h1>
-                        <small>creator</small> <br />
-                        <small className="">United Kingdom</small> <br />
-                        <small className="">12/01/2021</small>
+                    <div className="  py-3 grid grid-cols-2 ">
+                        <div className="">
+                            <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                <AiFillStar className="starReview" />
+                                <AiFillStar className="starReview" />
+                                <AiFillStar className="starReview" />
+                                <AiFillStar className="starReview" />
+                            </h1>
+                            <p className="text-sm text-gray-700 mt-5">CLOTH</p>
+                            <p className="text-gray text-xl">Title Of The Blog Post</p>
+                            <p>$60</p>
+                        </div>
+                        <div className="text-end relative">
+                            <button className="wishListBtn absolute top-0 right-0 mt-2 ">Share to join Wishlist</button>
+                            <p className="absolute top-12 right-12 mt-8">On Wishlist:</p>
+                            <p className="absolute top-12 right-0 mt-8 text-red-700"> 124</p>
+                        </div>
                     </div>
                 </div>
                 <div className="focus:outline-none cardAll  creatorBlogCard" aria-label="card 2" id=" ">
@@ -31,18 +43,23 @@ const PreOrder: NextPage = () => {
                         alt="notes"
                     />
 
-                    <div className="bg-white  py-3  ">
-                        <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
-                            <AiFillStar className="starReview" />
-                            <AiFillStar className="starReview" />
-                            <AiFillStar className="starReview" />
-                            <AiFillStar className="starReview" />
-                        </h1>
-                        <p className="text-gray text-xl mt-3">Ribbed button Best</p>
-                        <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider"></h1>
-                        <small>creator</small> <br />
-                        <small className="">United Kingdom</small> <br />
-                        <small className="">12/01/2021</small>
+                    <div className="  py-3 grid grid-cols-2 ">
+                        <div className="">
+                            <h1 className="focus:outline-none flex mt-1   text-lg text-gray-900 font-semibold tracking-wider">
+                                <AiFillStar className="starReview" />
+                                <AiFillStar className="starReview" />
+                                <AiFillStar className="starReview" />
+                                <AiFillStar className="starReview" />
+                            </h1>
+                            <p className="text-sm text-gray-700 mt-5">CLOTH</p>
+                            <p className="text-gray text-xl">Title Of The Blog Post</p>
+                            <p>$60</p>
+                        </div>
+                        <div className="text-end relative">
+                            <button className="wishListBtn absolute top-0 right-0 mt-2 ">Share to join Wishlist</button>
+                            <p className="absolute top-12 right-12 mt-8">On Wishlist:</p>
+                            <p className="absolute top-12 right-0 mt-8 text-red-700"> 124</p>
+                        </div>
                     </div>
                 </div>
             </div>
