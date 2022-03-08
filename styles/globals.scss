@@ -3,13 +3,18 @@
 @import "tailwindcss/utilities";
 @import "./scss/main.scss";
 
+// slick
+// Import css files for react-slick carousel
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+// @import "./SlickCarousel.scss";
+
 // parent scss
 @import "../components/Layouts/MainNav/MainNavBar.scss";
 @import "../components/Layouts/Footer/Footer.scss";
 @import "../components/Pagescompo/Home/AuroraHome.scss";
 @import "../pages/pages/blogs/Blogs.scss";
 @import "../components/Reuseable/MainCarousel/SlickCarousel.scss";
-
 
 // @import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -60,7 +65,7 @@ a {
     font-weight: 700;
   }
   .commonParent {
-    color: #FFF;
+    color: #fff;
     max-width: 500px !important;
   }
   .toastSuccess {
@@ -69,4 +74,13 @@ a {
   .toastError {
     background-color: $MainLightRed;
   }
+}
+
+.commonArrow{
+  background-color: red;
+  width: 25px;
+
+}
+.testCustomClass{
+  padding: 0 10px;
 }

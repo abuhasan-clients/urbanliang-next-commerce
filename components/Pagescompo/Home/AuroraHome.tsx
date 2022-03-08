@@ -1,11 +1,74 @@
 import type { NextPage } from 'next';
 import { AiFillStar } from 'react-icons/ai';
+import SlickCarousel from '../../Reuseable/MainCarousel/SlickCarousel';
 import Creators from '../CreatorsVideo';
-import Autction from './Auction';
 import DealOfTheDay from './DealOfDay';
 import PreOrder from './PreOrder';
 
+// carousel previous arrow icon on the left position
+const PrevArrow = ({ onClick }: any) => {
+    return (
+        <div className="prevArrow commonArrow" onClick={onClick}>
+            <i className="fa-solid fa-angle-right" />
+        </div>
+    );
+};
+const NextArrow = ({ onClick }: any) => {
+    return (
+        <div className="nextArrow commonArrow" onClick={onClick}>
+            <i className="fa-solid fa-angle-left" />
+        </div>
+    );
+};
+
 const AuroraHome: NextPage = () => {
+    const imgArr = [
+        {
+            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
+        },
+        {
+            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
+        },
+
+        {
+            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
+        },
+
+        {
+            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
+        },
+        {
+            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
+        },
+        {
+            img: 'https://img.etimg.com/thumb/msid-88634316,width-525,height-393,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg'
+        }
+    ];
+    const responsive = [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ];
     return (
         <>
             <p className="text-5xl">BESTSELLERS</p>
@@ -16,11 +79,11 @@ const AuroraHome: NextPage = () => {
                     <div className="w-full  flex justify-center mx-auto ">
                         <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
                             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                <div className="focus:outline-none" aria-label="card 1">
+                                <div className="focus:outline-none ull overflow-hidden" aria-label="card 1">
                                     <img
                                         role="img"
                                         aria-label="code editor"
-                                        className="focus:outline-none ull"
+                                        className="focus:outline-none w-full"
                                         src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         alt="code editor"
                                     />
@@ -313,10 +376,21 @@ const AuroraHome: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <PreOrder></PreOrder>
-            <DealOfTheDay></DealOfTheDay>
-            <Autction></Autction>
-            <Creators></Creators>
+            <PreOrder />
+            <DealOfTheDay />
+            <SlickCarousel
+                arrData={imgArr}
+                arrows
+                responsive={responsive}
+                slidesToShow={4}
+                pauseOnHover
+                customClass="testCustomClass"
+                parentClass="testParentClass"
+                sliderListClass="testLitsClass"
+                hasPrev={<PrevArrow />}
+                hasNext={<NextArrow />}
+            />
+            <Creators />
         </>
     );
 };

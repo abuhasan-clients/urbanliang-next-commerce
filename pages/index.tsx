@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import AuroraHome from '../components/Pagescompo/Home/AuroraHome';
+// import BestSellers from '../components/Pagescompo/Home/BestSellers';
 import SignupMail from '../components/Pagescompo/Home/SignupMail';
 import Banner from '../components/Reuseable/Banner';
 import { PageSeo } from '../components/Seo/PageSeo';
