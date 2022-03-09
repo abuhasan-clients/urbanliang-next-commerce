@@ -24,21 +24,40 @@ const NextArrow = ({ onClick }: any) => {
 const AuroraHome: NextPage = () => {
     const imgArr = [
         {
-            img: 'https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2215210/2018/1/22/11516616541193-Roadster-Men-Beige-Colourblocked-Round-Neck-T-shirt-8181516616541016-1.jpg'
+            img: 'https://cdn.shopify.com/s/files/1/0162/2116/files/5_Best_Shirt_And_Pant_Combinations_For_Men_7.jpg?v=1541421691'
         },
         {
             img: 'https://media.istockphoto.com/photos/hipster-handsome-male-model-with-beard-wearing-black-blank-tshirt-picture-id925774200?k=20&m=925774200&s=170667a&w=0&h=gcmcsCGRKYilvz9HLcPEMrxoqoU78gGnqVkGGD59eDY='
         },
 
         {
-            img: 'https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2215210/2018/1/22/11516616541193-Roadster-Men-Beige-Colourblocked-Round-Neck-T-shirt-8181516616541016-1.jpg'
+            img: 'https://cdn.shopify.com/s/files/1/0162/2116/files/5_Best_Shirt_And_Pant_Combinations_For_Men_7.jpg?v=1541421691'
         },
 
         {
-            img: 'https://media.istockphoto.com/photos/hipster-handsome-male-model-with-beard-wearing-black-blank-tshirt-picture-id925774200?k=20&m=925774200&s=170667a&w=0&h=gcmcsCGRKYilvz9HLcPEMrxoqoU78gGnqVkGGD59eDY='
+            img: 'https://i.pinimg.com/originals/e1/94/0a/e1940a6bf16b6f2b1ac2fdcf50397893.jpg'
         },
         {
-            img: 'https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2215210/2018/1/22/11516616541193-Roadster-Men-Beige-Colourblocked-Round-Neck-T-shirt-8181516616541016-1.jpg'
+            img: 'https://cdn.shopify.com/s/files/1/0162/2116/files/5_Best_Shirt_And_Pant_Combinations_For_Men_7.jpg?v=1541421691'
+        }
+    ];
+    const imgArr2 = [
+        {
+            img: 'https://cdn.vox-cdn.com/thumbor/RZ2VTtZu8u-8hDclDfLGYKCaSfU=/0x106:2040x1254/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/70218969/bfarsace_211129_4901_0006.0.jpg'
+        },
+        {
+            img: 'https://cdn.thewirecutter.com/wp-content/media/2021/07/drones-2048px-2x1-9431.jpg?auto=webp&quality=75&crop=2:1&width=1024'
+        },
+
+        {
+            img: 'https://www.notebookcheck.net/fileadmin/Notebooks/Amazon/Echo_Dot/Echo_Dot_Black_Low_Angle_On.jpg'
+        },
+
+        {
+            img: 'https://i.pinimg.com/originals/e1/94/0a/e1940a6bf16b6f2b1ac2fdcf50397893.jpg'
+        },
+        {
+            img: 'https://cdn.shopify.com/s/files/1/0162/2116/files/5_Best_Shirt_And_Pant_Combinations_For_Men_7.jpg?v=1541421691'
         }
     ];
     const responsive = [
@@ -399,8 +418,22 @@ const AuroraHome: NextPage = () => {
                     </div>
                     {/* deal of the day */}
                     <DealOfTheDay />
-                    {/* slider */}
+                    {/* slider  new arrivals*/}
                     <h1 className="text-5xl ml-2 mb-12 mt-8">NEW ARRIVALS</h1>
+                    <SlickCarousel
+                        arrData={imgArr}
+                        arrows
+                        responsive={responsive}
+                        slidesToShow={4}
+                        pauseOnHover
+                        customClass="testCustomClass"
+                        parentClass="testParentClass"
+                        sliderListClass="testLitsClass"
+                        hasPrev={<PrevArrow />}
+                        hasNext={<NextArrow />}
+                    />
+                    {/* slider  new arrivals*/}
+                    <h1 className="text-5xl ml-2 mb-12 mt-8">EDITORS CHOICE</h1>
                     <SlickCarousel
                         arrData={imgArr}
                         arrows
@@ -415,6 +448,20 @@ const AuroraHome: NextPage = () => {
                     />
                     {/* pre order */}
                     <PreOrder />
+                    {/* slider  Auction*/}
+                    <h1 className="text-5xl ml-2 mb-12 mt-8">AUCTION</h1>
+                    <SlickCarousel
+                        arrData={imgArr2}
+                        arrows
+                        responsive={responsive}
+                        slidesToShow={4}
+                        pauseOnHover
+                        customClass="testCustomClass"
+                        parentClass="testParentClass"
+                        sliderListClass="testLitsClass"
+                        hasPrev={<PrevArrow />}
+                        hasNext={<NextArrow />}
+                    />
                     {/* home sho end */}
                     <p className="text-5xl mb-12">POPULAR STORES</p>
                     <div className=" w-full lex justify-center mx-auto ">
