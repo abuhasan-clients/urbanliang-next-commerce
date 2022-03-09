@@ -1,19 +1,10 @@
 @import "../../../styles/scss/main.scss";
 
-@media screen and (max-width: 1202px) {
-    .main-header {
-        .nav-links {
-            .hideOn1204 {
-                display: none !important;
-            }
-            .responsive_buttons {
-                display: block !important;
-            }
-        }
-    }
+@media screen and (max-width: 1292px) {
+    
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 1092px) {
     .main-header {
         border-bottom: none;
         .logoBrand {
