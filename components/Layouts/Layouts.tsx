@@ -4,7 +4,7 @@ import { RootState } from '../../services/redux/rootReducer';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, StyledEngineProvider } from '@mui/material';
 import themes from '../themes';
-import Customization from '../themes/Customization';
+// import Customization from '../themes/Customization';
 import MainNavBar from './MainNav/MainNavBar';
 import Footer from './Footer/Footer';
 // import { useRouter } from 'next/router';
@@ -27,7 +27,7 @@ const Layouts: NextPage = ({ children }: any) => {
                 <footer id="footer_wrapper" className={`${customization.themeChange === 'light' ? 'footer_main_bg' : ''}`}>
                     <Footer />
                 </footer>
-                <Customization />
+                {/* <Customization /> */}
             </ThemeProvider>
         </StyledEngineProvider>
     );

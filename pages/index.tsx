@@ -19,7 +19,7 @@ const Home: NextPage = () => {
                 rightInfo
                 icon="fa-solid fa-heart-pulse"
                 title={
-                    <h5>
+                    <h5 className="TITLE_BODONI">
                         MEET THE <br /> MAKERS
                     </h5>
                 }
