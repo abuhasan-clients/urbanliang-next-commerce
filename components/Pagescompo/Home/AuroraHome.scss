@@ -28,7 +28,18 @@
     width: 100%;
     height: 798px;
 }
+@media only screen and (max-width: 1272px) {
+    .ull {
+        width: 100%;
+        height: 790px;
 
+    }
+    .ull img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+  }
 
 .bigCard:hover{
     .reamaining{
@@ -67,14 +78,23 @@ margin-bottom: 3%;
     color: white;
     
 }
-.popularSdiv:hover{
-.rightArrowP{
-    display: block;
-    font-size: 90px;
+.popularSdiv{
+    height: 400px;
 
-}
 }
 .rightArrowP{
     display: none;
     font-size: 90px;
+}
+.addWish{
+    display: none;
+    color: white;
+  font-size: 30px;
+}
+.cardMotherDiv:hover{
+    cursor: pointer;
+.addWish{
+    display: block;
+
+}
 }

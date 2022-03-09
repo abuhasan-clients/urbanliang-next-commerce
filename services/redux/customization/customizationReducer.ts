@@ -10,7 +10,7 @@ interface InitialStateType {
 
 export const initialState: InitialStateType = {
     // isOpen: [], // for active default menu
-    fontFamily: `'Roboto Slab', serif`,
+    fontFamily: `'Inter', sans-serif`,
     borderRadius: 12,
     themeChange: 'light',
     dirChange: false,

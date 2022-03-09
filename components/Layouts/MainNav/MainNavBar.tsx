@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import NavLink from '../../Reuseable/NavLink';
+// import logo_black from '../../../public/assets/logoIcon/logo/LOVIE AURORA LOGO BLACK.png';
 
 const MainNavBar = () => {
     const location = useRouter();
-    // const [scrollTrue, setScrollTrue] = useState(false);
+    const [scrollTrue, setScrollTrue] = useState(false);
     // console.log(scrollTrue);
 
     // if (typeof window !== 'undefined') {
@@ -28,10 +30,10 @@ const MainNavBar = () => {
 
             window.onscroll = () => {
                 scrollingChange();
-                // if (window.scrollY > 10) {
-                //     return setScrollTrue(true);
-                // }
-                // return setScrollTrue(false);
+                if (window.scrollY > 10) {
+                    return setScrollTrue(true);
+                }
+                return setScrollTrue(false);
             };
         }
     }, []);
@@ -149,11 +151,12 @@ const MainNavBar = () => {
         <div className="main-header" ref={myRef}>
             <div className="container px-3 mx-auto flex items-center justify-between">
                 <div className="nav_logo hidden z-50">
-                    <Link href="/">
-                        <a>
-                            LOVIE AURORA <i className="fa-solid fa-heart-pulse" />
-                        </a>
-                    </Link>
+                    <NavLink href="/">
+                        <img
+                            src={`${!scrollTrue ? '/static/images/logoSingle/LOGO_BLACK.png' : '/static/images/logoSingle/LOGO_WHITE.png'}`}
+                            alt="LOGO"
+                        />
+                    </NavLink>
                 </div>
                 <input type="checkbox" className="menu-btn" id="menu-btn" />
                 <label htmlFor="menu-btn" className="menu-icon">
@@ -162,22 +165,43 @@ const MainNavBar = () => {
                 <ul className="nav-links m-0 flex flex-col w-full">
                     <div className="flex justify-between header_top_nav">
                         <div className="logoBrand">
-                            <Link href="/">
-                                <a>
-                                    LOVIE AURORA <i className="fa-solid fa-heart-pulse" />
-                                </a>
-                            </Link>
+                            <NavLink href="/">
+                                <img
+                                    src={`${
+                                        !scrollTrue
+                                            ? '/static/images/logoSingle/LOGO_BLACK.png'
+                                            : '/static/images/logoSingle/LOGO_WHITE.png'
+                                    }`}
+                                    alt="LOGO"
+                                />
+                            </NavLink>
+                            {/* <Link href="/">
+                                
+                                
+                            </Link> */}
                         </div>
                         <div className="icons_parent flex items-center">
                             <div className="search_button">
                                 <input type="text" placeholder="what are you Looking for?" />
-                                <i className="fa-solid fa-magnifying-glass" />
+                                <img src="/static/images/Icons/ICONS_BLACK/SEARCH_BTN.png" className="cursorPointer" alt="search" />
                             </div>
                             <div className="header_icons ml-5 flex ">
-                                <i className="fa-solid fa-right-long" />
-                                <i className="fa-solid fa-cart-shopping" />
-                                <i className="fa-regular fa-heart" />
-                                <i className="fa-regular fa-message" />
+                                <div className="icon_parent">
+                                    <img
+                                        src="/static/images/Icons/ICONS_BLACK/RIGHT ARROW BOLD.png"
+                                        className="cursorPointer margin_decrement"
+                                        alt="arrow"
+                                    />
+                                </div>
+                                <div className="icon_parent">
+                                    <img src="/static/images/Icons/ICONS_BLACK/TROLLEY_BOLD.png" className="cursorPointer" alt="arrow" />
+                                </div>
+                                <div className="icon_parent">
+                                    <img src="/static/images/Icons/ICONS_BLACK/HEART A_BOLD.png" className="cursorPointer" alt="arrow" />
+                                </div>
+                                <div className="icon_parent">
+                                    <img src="/static/images/Icons/ICONS_BLACK/MSG_BOLD.png" className="cursorPointer" alt="arrow" />
+                                </div>
                             </div>
                         </div>
                     </div>

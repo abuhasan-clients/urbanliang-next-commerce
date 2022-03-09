@@ -5,7 +5,7 @@ const PreOrder: NextPage = () => {
     return (
         <>
             <p className="text-5xl mb-12 ml-3 mt-12">PRE-ORDER</p>
-            <div className="grid sm:grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 pb-6 px-4   ">
+            <div className="grid sm:grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 pb-6 px-4   ">
                 <div className="focus:outline-none cardAll  creatorBlogCard" aria-label="card 2" id=" ">
                     <div className="overflow-hidden imgSize ">
                         <img

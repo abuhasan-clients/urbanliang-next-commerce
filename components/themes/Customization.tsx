@@ -98,7 +98,7 @@ const Customization = () => {
         if (typeof window !== 'undefined') {
             const initialFont = localStorage.getItem('fontFamily');
             if (initialFont === null) {
-                setFontFamily('Roboto');
+                setFontFamily('Inter');
             } else {
                 setFontFamily(`${initialFont}`);
             }

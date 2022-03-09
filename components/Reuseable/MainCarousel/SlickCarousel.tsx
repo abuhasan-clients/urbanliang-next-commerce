@@ -1,4 +1,4 @@
-import { AiFillStar } from 'react-icons/ai';
+import { AiFillHeart, AiFillStar } from 'react-icons/ai';
 import Slider from 'react-slick';
 
 // carousel next arrow icon on the right position
@@ -75,17 +75,17 @@ const SlickCarousel = ({
     };
 
     return (
-        <div id="slickCarouselWrapper" className={`${parentClass}`}>
+        <div id="slickCarouselWrapper" className={`${parentClass} overflow-hidden px-10`}>
             <Slider {...settings} className={`${sliderListClass}`}>
                 {arrData &&
                     arrData?.map((image: any, index: number) => (
-                        <div key={index} className={`inline-block ${customClass}`} aria-label="card 2">
-                            <div className="overflow-hidden  h-80">
-                                <div className="absolute  top-0 right-0 text-white">hello</div>
+                        <div key={index} className={`inline-block cardMotherDiv relative ${customClass}`} aria-label="card 2">
+                            <div className="overflow-hidden  ">
+                                <AiFillHeart className="absolute top-5 right-8   addWish" />
                                 <img
                                     role="img"
                                     aria-label="gaming"
-                                    className="focus:outline-none focus:outline-none w-full"
+                                    className="focus:outline-none focus:outline-none object-cover h-80 w-full "
                                     src={image.img}
                                     alt="notes"
                                 />
