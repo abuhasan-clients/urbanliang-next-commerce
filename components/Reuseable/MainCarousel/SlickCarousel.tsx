@@ -75,7 +75,7 @@ const SlickCarousel = ({
     };
 
     return (
-        <div id="slickCarouselWrapper" className={`${parentClass}`}>
+        <div id="slickCarouselWrapper" className={`${parentClass} overflow-hidden px-10`}>
             <Slider {...settings} className={`${sliderListClass}`}>
                 {arrData &&
                     arrData?.map((image: any, index: number) => (

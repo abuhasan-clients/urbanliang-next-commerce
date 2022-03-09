@@ -18,7 +18,7 @@ const Layouts: NextPage = ({ children }: any) => {
         <StyledEngineProvider injectFirst>
             <ThemeProvider theme={themes(customization)}>
                 <CssBaseline />
-                <header id="header_nav_parent">
+                <header id="header_nav_parent" className="">
                     <MainNavBar />
                 </header>
                 <main id="mainLayoutWrapper" className="container mx-auto px-3">

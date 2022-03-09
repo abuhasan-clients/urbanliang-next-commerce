@@ -16,13 +16,12 @@
 @media screen and (max-width: 868px) {
     .main-header {
         border-bottom: none;
-        // background-color: $MainBlueColor;
-
-        // a {
-        //     // color: $MainWhiteColor;
-        // }
+        .logoBrand {
+            display: none !important;
+        }
         .nav_logo {
             display: block !important;
+            width: 400px;
         }
 
         .menu-btn {
@@ -36,17 +35,17 @@
             &__line {
                 animation: closedMid 0.8s backwards;
                 animation-direction: reverse;
-                background: $NavActiveColor;
+                background: $default_e8_orange;
 
                 &::before {
                     animation: closedTop 0.8s backwards;
                     animation-direction: reverse;
-                    background: $NavActiveColor;
+                    background: $default_e8_orange;
                 }
                 &::after {
                     animation: closedBtm 0.8s backwards;
                     animation-direction: reverse;
-                    background: $NavActiveColor;
+                    background: $default_e8_orange;
                 }
             }
         }
@@ -79,9 +78,9 @@
             justify-content: space-evenly;
             align-items: center !important;
             padding: 10px 0;
-            padding-top: 400px;
+            padding-top: 450px;
             font-size: 16px;
-            color: #fff;
+            color: $default_f2_white;
             background: #121309;
             transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
             clip-path: circle(150px at top right);
@@ -111,7 +110,7 @@
 
             .nav-link {
                 a {
-                    color: $MainWhiteColor;
+                    color: $default_f2_white;
                 }
                 opacity: 1;
                 transform: translateX(0);
@@ -141,15 +140,15 @@
             border-radius: 50%;
             animation: pulse 1s;
             .menu-icon__line {
-                background: $NavActiveColor;
+                background: $default_e8_orange;
                 animation: openMid 0.8s forwards;
 
                 &::before {
-                    background: $NavActiveColor;
+                    background: $default_e8_orange;
                     animation: openTop 0.8s forwards;
                 }
                 &::after {
-                    background: $NavActiveColor;
+                    background: $default_e8_orange;
                     animation: openBtm 0.8s forwards;
                 }
             }

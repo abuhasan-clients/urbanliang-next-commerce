@@ -2,10 +2,12 @@
 // @import "bootstrap/dist/css/bootstrap.min.css";
 
 // paper & background
-$paper: #ffffff;
+@import "./variable";
+
+$paper: $default_f7_white;
 
 // primary
-$primaryLight: #e3f2fd;
+$primaryLight: $default_f7_white;
 $primaryMain: #2196f3;
 $primaryDark: #1e88e5;
 $primary200: #90caf9;
