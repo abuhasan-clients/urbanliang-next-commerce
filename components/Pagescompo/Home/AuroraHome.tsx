@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { AiFillStar } from 'react-icons/ai';
+import { AiFillHeart, AiFillStar } from 'react-icons/ai';
 import SlickCarousel from '../../Reuseable/MainCarousel/SlickCarousel';
 import Creators from '../CreatorsVideo';
 import DealOfTheDay from './DealOfDay';
@@ -88,16 +88,18 @@ const AuroraHome: NextPage = () => {
     ];
     return (
         <>
-            <p className="text-5xl">BESTSELLERS</p>
-
             {/* <!-- component --> */}
             <div className=" ">
+                <p className="text-5xl">BESTSELLERS</p>
+
                 <div className="mx-auto">
                     <div className="w-full  flex justify-center mx-auto ">
                         <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
                             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                <div className="focus:outline-none" aria-label="card 1">
-                                    <div className="ull overflow-hidden">
+                                <div className="focus:outline-none relative  cardMotherDiv" aria-label="card 1">
+                                    <AiFillHeart className="absolute top-5 right-5   addWish" />
+
+                                    <div className="ull overflow-hidden ">
                                         <img
                                             role="img"
                                             aria-label="code editor"
@@ -127,8 +129,9 @@ const AuroraHome: NextPage = () => {
                                 </div>
                                 <div>
                                     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                        <div className="   focus:outline-none  relative cardMotherDiv" aria-label="card 2">
                                             <div className="overflow-hidden  h-80 ">
+                                                <AiFillHeart className="absolute top-5 right-5   addWish" />
                                                 <img
                                                     role="img"
                                                     aria-label="gaming"
@@ -157,8 +160,9 @@ const AuroraHome: NextPage = () => {
                                             </div>
                                         </div>
 
-                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                        <div className="   focus:outline-none relative cardMotherDiv  " aria-label="card 2">
                                             <div className="overflow-hidden  h-80 ">
+                                                <AiFillHeart className="absolute top-5 right-5   addWish" />
                                                 <img
                                                     role="img"
                                                     aria-label="gaming"
@@ -189,8 +193,9 @@ const AuroraHome: NextPage = () => {
                                     </div>
 
                                     <div className="mt-1 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                        <div className="   focus:outline-none relative cardMotherDiv  " aria-label="card 2">
                                             <div className="overflow-hidden  h-80 ">
+                                                <AiFillHeart className="absolute top-5 right-5   addWish" />
                                                 <img
                                                     role="img"
                                                     aria-label="gaming"
@@ -219,8 +224,9 @@ const AuroraHome: NextPage = () => {
                                             </div>
                                         </div>
 
-                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                        <div className="   focus:outline-none relative cardMotherDiv  " aria-label="card 2">
                                             <div className="overflow-hidden  h-80 ">
+                                                <AiFillHeart className="absolute top-5 right-5   addWish" />
                                                 <img
                                                     role="img"
                                                     aria-label="gaming"
@@ -257,12 +263,13 @@ const AuroraHome: NextPage = () => {
                     <p className="text-5xl">SHOP HOME</p>
 
                     <div className="w-full  flex justify-center mx-auto ">
-                        <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
+                        <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-5">
                             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
                                 <div>
                                     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                        <div className="   focus:outline-none cardMotherDiv relative  " aria-label="card 2">
                                             <div className="overflow-hidden  h-80 ">
+                                                <AiFillHeart className="absolute top-5 right-5   addWish" />
                                                 <img
                                                     role="img"
                                                     aria-label="gaming"
@@ -291,8 +298,9 @@ const AuroraHome: NextPage = () => {
                                             </div>
                                         </div>
 
-                                        <div className="   focus:outline-none  " aria-label="card 2">
-                                            <div className="overflow-hidden  h-80 ">
+                                        <div className="   focus:outline-none relative cardMotherDiv " aria-label="card 2">
+                                            <div className="overflow-hidden  h-80  ">
+                                                <AiFillHeart className="absolute top-5 right-5   addWish" />
                                                 <img
                                                     role="img"
                                                     aria-label="gaming"
@@ -323,8 +331,9 @@ const AuroraHome: NextPage = () => {
                                     </div>
 
                                     <div className="mt-1 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                        <div className="   focus:outline-none cradMotherDiv  " aria-label="card 2">
                                             <div className="overflow-hidden  h-80 ">
+                                                <AiFillHeart className="absolute top-5 right-5   addWish" />
                                                 <img
                                                     role="img"
                                                     aria-label="gaming"
@@ -353,8 +362,9 @@ const AuroraHome: NextPage = () => {
                                             </div>
                                         </div>
 
-                                        <div className="   focus:outline-none  " aria-label="card 2">
+                                        <div className="   focus:outline-none  cardMotherDiv relative " aria-label="card 2">
                                             <div className="overflow-hidden  h-80 ">
+                                                <AiFillHeart className="absolute top-5 right-5   addWish" />{' '}
                                                 <img
                                                     role="img"
                                                     aria-label="gaming"
@@ -384,8 +394,9 @@ const AuroraHome: NextPage = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="focus:outline-none" aria-label="card 1">
+                                <div className="focus:outline-none relative cardMotherDiv" aria-label="card 1">
                                     <div className="ull overflow-hidden">
+                                        <AiFillHeart className="absolute top-5 right-5   addWish" />
                                         <img
                                             role="img"
                                             aria-label="code editor"
@@ -419,7 +430,7 @@ const AuroraHome: NextPage = () => {
                     {/* deal of the day */}
                     <DealOfTheDay />
                     {/* slider  new arrivals*/}
-                    <h1 className="text-5xl ml-2 mb-12 mt-8">NEW ARRIVALS</h1>
+                    <h1 className="text-5xl ml-2  mt-12 py-5">NEW ARRIVALS</h1>
                     <SlickCarousel
                         arrData={imgArr}
                         arrows
