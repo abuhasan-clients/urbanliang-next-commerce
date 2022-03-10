@@ -12,6 +12,10 @@
 .loader_loading_text {
     font-size: 7px;
 }
+.default_dark {
+    color: $default_dark;
+}
+
 @keyframes dash {
     to {
         stroke-dashoffset: 136;

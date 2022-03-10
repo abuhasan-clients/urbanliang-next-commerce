@@ -8,15 +8,19 @@ import PreOrder from './PreOrder';
 // carousel previous arrow icon on the left position
 const PrevArrow = ({ onClick }: any) => {
     return (
-        <div className="prevArrow commonArrow " onClick={onClick}>
-            <i className="fa-solid fa-caret-right" />
+        <div className="prevArrow commonArrow" style={{ transform: 'rotate(-30deg)', padding: '5px' }} onClick={onClick}>
+            <svg fill="gray" viewBox="0 0 100 100">
+                <polygon points="50 15, 100 100, 0 100" />
+            </svg>
         </div>
     );
 };
 const NextArrow = ({ onClick }: any) => {
     return (
-        <div className="nextArrow commonArrow " onClick={onClick}>
-            <i className="fa-solid fa-caret-left" />
+        <div className="nextArrow commonArrow" style={{ transform: 'rotate(30deg)', padding: '5px' }} onClick={onClick}>
+            <svg fill="gray" viewBox="0 0 100 100">
+                <polygon points="50 15, 100 100, 0 100" />
+            </svg>
         </div>
     );
 };
@@ -43,14 +47,14 @@ const AuroraHome: NextPage = () => {
     ];
     const imgArr2 = [
         {
-            img: 'https://cdn.vox-cdn.com/thumbor/RZ2VTtZu8u-8hDclDfLGYKCaSfU=/0x106:2040x1254/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/70218969/bfarsace_211129_4901_0006.0.jpg'
+            img: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FtZXJhfGVufDB8fDB8fA%3D%3D&w=1000&q=80'
         },
         {
-            img: 'https://cdn.thewirecutter.com/wp-content/media/2021/07/drones-2048px-2x1-9431.jpg?auto=webp&quality=75&crop=2:1&width=1024'
+            img: 'https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1617978295000/photosp/a7ccdc4b-ec2d-43c8-9536-c95145fd5d34/stock-photo-view-from-above-travel-destinations-camera-planning-world-map-tickets-photos-to-do-list-writing-notes-a7ccdc4b-ec2d-43c8-9536-c95145fd5d34.jpg'
         },
 
         {
-            img: 'https://www.notebookcheck.net/fileadmin/Notebooks/Amazon/Echo_Dot/Echo_Dot_Black_Low_Angle_On.jpg'
+            img: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FtZXJhfGVufDB8fDB8fA%3D%3D&w=1000&q=80'
         },
 
         {
@@ -90,10 +94,10 @@ const AuroraHome: NextPage = () => {
         <>
             {/* <!-- component --> */}
             <div className=" ">
-                <p className="text-5xl">BESTSELLERS</p>
+                <p className="text-5xl mt-12">BESTSELLERS</p>
                 <div className="mx-auto">
                     <div className="w-full  flex justify-center mx-auto ">
-                        <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
+                        <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-2">
                             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
                                 <div className="focus:outline-none relative  cardMotherDiv" aria-label="card 1">
                                     <AiFillHeart className="absolute top-5 right-5   addWish" />
@@ -471,7 +475,7 @@ const AuroraHome: NextPage = () => {
                         hasNext={<NextArrow />}
                     />
                     {/* home sho end */}
-                    <p className="text-5xl mb-12">POPULAR STORES</p>
+                    <p className="text-5xl mb-12 mt-12">POPULAR STORES</p>
                     <div className=" w-full lex justify-center mx-auto ">
                         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 ">
                             <div className="popularSdiv cursor-pointer">

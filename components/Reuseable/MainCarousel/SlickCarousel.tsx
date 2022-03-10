@@ -79,17 +79,18 @@ const SlickCarousel = ({
             <Slider {...settings} className={`${sliderListClass}`}>
                 {arrData &&
                     arrData?.map((image: any, index: number) => (
-                        <div key={index} className={`inline-block cardMotherDiv relative ${customClass}`} aria-label="card 2">
-                            <div className="overflow-hidden  ">
-                                <AiFillHeart className="absolute top-5 right-8   addWish" />
+                        <div key={index} className={` cardMotherDiv relative ${customClass}`} aria-label="card 2">
+                            <div className="overflow-hidden  h-80 ">
+                                <AiFillHeart className="absolute top-5 right-5   addWish" />
                                 <img
                                     role="img"
                                     aria-label="gaming"
-                                    className="focus:outline-none focus:outline-none object-cover h-80 w-full "
+                                    className="focus:outline-none focus:outline-none  w-full"
                                     src={image.img}
                                     alt="notes"
                                 />
                             </div>
+
                             <div className="bg-white  py-4  ">
                                 <p className="text-gray">CLOTH</p>
                                 <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">

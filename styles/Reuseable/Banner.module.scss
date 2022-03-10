@@ -1,3 +1,22 @@
+@import "../scss/main.scss";
+
+#bannerMain{
+    height: 700px;
+}
+#mainClass{
+    top:30%;
+    right:7%;
+}
+@media screen and (max-width: 498px) {
+#mainClass{
+    top:30%;
+    right:4%;
+}
+    }
+
+
+
+// 
 .banner_wrapper {
     margin-top: 20px;
     height: 700px;

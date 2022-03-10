@@ -1,7 +1,9 @@
 @import "../../../styles/scss/main.scss";
 
-@media screen and (max-width: 1292px) {
-    
+@media screen and (max-width: 1092px) {
+    #header_nav_parent{
+        height: 60px;
+    }
 }
 
 @media screen and (max-width: 1092px) {

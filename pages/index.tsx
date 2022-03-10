@@ -13,22 +13,21 @@ const Home: NextPage = () => {
             {/* <h4 className="">{t('name')}</h4> */}
 
             <Banner
-                layer
-                image="https://images.unsplash.com/photo-1604702770018-55669959b124?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMGdpcmx8ZW58MHx8MHx8&w=1000&q=80"
-                rightInfo
-                icon="fa-solid fa-heart-pulse"
+                image="https://i.ibb.co/Rz9vXx4/room-chair-vase-wall-66323-1280x720.jpg"
                 title={
                     <h5 className="TITLE_BODONI">
                         MEET THE <br /> MAKERS
                     </h5>
                 }
+                textColor="default_dark"
                 desc={
-                    <p>
-                        We&sbquo;re LOVIE AURORA, a company-driven online marketplace that connects you with unique, exciting creators and
-                        their products from all over the world
+                    <p className="px-2">
+                        We&sbquo;re LOVIE AURORA, a company-driven online marketplace that connects
+                        <br /> you with unique, exciting creators and their products from all over the world <br /> you with unique,
+                        exciting creators and their products from all over the world
                     </p>
                 }
-                defaultClasses="rightInfo absolute right-20 top-40"
+                // defaultClasses="rightInfo absolute right-20 top-40"
             />
 
             <AuroraHome />
