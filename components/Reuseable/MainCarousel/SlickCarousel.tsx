@@ -91,7 +91,7 @@ const SlickCarousel = ({
                                 />
                             </div>
 
-                            <div className="bg-white  py-4  ">
+                            <div className=" py-4  ">
                                 <p className="text-gray">CLOTH</p>
                                 <h1 className="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
                                     Ribbed Button Vest
