@@ -13,10 +13,10 @@ const Home: NextPage = () => {
             {/* <h4 className="">{t('name')}</h4> */}
 
             <Banner
-                layer
-                image="https://images.unsplash.com/photo-1604702770018-55669959b124?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMGdpcmx8ZW58MHx8MHx8&w=1000&q=80"
-                rightInfo
-                icon="fa-solid fa-heart-pulse"
+                // layer
+                image="https://png.pngtree.com/background/20210715/original/pngtree-sell-banner-background-picture-image_1280025.jpg"
+                // rightInfo
+                // icon="fa-solid fa-heart-pulse"
                 title={
                     <h5 className="TITLE_BODONI">
                         MEET THE <br /> MAKERS
@@ -24,11 +24,12 @@ const Home: NextPage = () => {
                 }
                 desc={
                     <p>
-                        We&sbquo;re LOVIE AURORA, a company-driven online marketplace that connects you with unique, exciting creators and
-                        their products from all over the world
+                        We&sbquo;re LOVIE AURORA, a company-driven online marketplace that connects
+                        <br /> you with unique, exciting creators and their products from all over the world <br /> you with unique,
+                        exciting creators and their products from all over the world
                     </p>
                 }
-                defaultClasses="rightInfo absolute right-20 top-40"
+            // defaultClasses="rightInfo absolute right-20 top-40"
             />
 
             <AuroraHome />

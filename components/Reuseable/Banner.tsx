@@ -2,23 +2,11 @@ import styles from '../../styles/Reuseable/Banner.module.scss';
 
 const Banner = ({ layer, image, defaultInfo, rightInfo, defaultClasses, desc, icon, title }: any) => {
     return (
-        <div className={`relative ${styles.banner_wrapper} mb-20`}>
-            <div className={`${styles.img_parent}`}>
-                {layer && <div className={`${styles.banner_layer}`} />}
-                {image && <img src={image} alt="" />}
-                {defaultInfo && (
-                    <div className={`${styles.banner_info} ${defaultClasses}`}>
-                        <i className={`${icon}`} />
-                        {title}
-                    </div>
-                )}
-                {rightInfo && (
-                    <div className={`${styles.banner_info} ${defaultClasses}`}>
-                        {title}
-                        {desc}
-                        <i className={`${icon}`} />
-                    </div>
-                )}
+        <div className="relative overflow-hidden  " id={styles.bannerMain}>
+            <img className="object-cover w-full " src={image} alt="Flower and sky" />
+            <div className="absolute      pt-12  px-6 py-4" id={styles.mainClass}>
+                <h4 className="mb-3 sm:text-4xl  xl:text-8xl md:text-8xl  font-semibold tracking-tight text-white">{title}</h4>
+                <p className="leading-normal text-gray-100">{desc}</p>
             </div>
         </div>
     );
