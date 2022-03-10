@@ -8,15 +8,19 @@ import PreOrder from './PreOrder';
 // carousel previous arrow icon on the left position
 const PrevArrow = ({ onClick }: any) => {
     return (
-        <div className="prevArrow commonArrow " onClick={onClick}>
-            <i className="fa-solid fa-caret-right" />
+        <div className="prevArrow commonArrow" style={{ transform: 'rotate(-30deg)', padding: '5px' }} onClick={onClick}>
+            <svg fill="gray" viewBox="0 0 100 100">
+                <polygon points="50 15, 100 100, 0 100" />
+            </svg>
         </div>
     );
 };
 const NextArrow = ({ onClick }: any) => {
     return (
-        <div className="nextArrow commonArrow " onClick={onClick}>
-            <i className="fa-solid fa-caret-left" />
+        <div className="nextArrow commonArrow" style={{ transform: 'rotate(30deg)', padding: '5px' }} onClick={onClick}>
+            <svg fill="gray" viewBox="0 0 100 100">
+                <polygon points="50 15, 100 100, 0 100" />
+            </svg>
         </div>
     );
 };
