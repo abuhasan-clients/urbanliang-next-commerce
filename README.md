@@ -28,4 +28,3 @@ ____________________________
 [XD2]: https://xd.adobe.com/view/59b6d84e-0dd5-410b-aec5-bdf1b3da7334-0ce5/grid/
 [FarmerMotion]: https://www.framer.com/docs/examples
 [talwindscss]: https://www.tallwindcss.com
-
