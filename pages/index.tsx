@@ -23,9 +23,9 @@ const Home: NextPage = () => {
                 textColor="default_dark"
                 desc={
                     <p className="px-2">
-                        We&sbquo;re LOVIE AURORA, a company-driven online marketplace that connects
+                        {/* We&sbquo;re LOVIE AURORA, a company-driven online marketplace that connects
                         <br /> you with unique, exciting creators and their products from all over the world <br /> you with unique,
-                        exciting creators and their products from all over the world
+                        exciting creators and their products from all over the world */}
                     </p>
                 }
                 icon="/static/images/loveIcon/LOVIE AURORA ICON BLACK.png"
