@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import SignupMail from '../../../components/Pagescompo/Home/SignupMail';
 import Banner from '../../../components/Reuseable/Banner';
-import CreatorsBlog from './CreatorsBlog';
+import CreatorsBlog from '../../../components/Pagescompo/Blog/CreatorsBlog';
 
 const BlogHome: NextPage = () => {
     const imgArr = [

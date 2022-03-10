@@ -53,97 +53,105 @@ const MainNavBar = () => {
         {
             name: 'Valentine Day',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'Dropdown_Items1', path: '/logo1' },
+                { name: 'Dropdown_Items2', path: '/logo2' },
+                { name: 'Dropdown_Items3', path: '/logo3' }
             ]
         },
         {
             name: 'Handmade',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'Dropdown_Items1', path: '/logo1' },
+                { name: 'Dropdown_Items2', path: '/logo2' },
+                { name: 'Dropdown_Items3', path: '/logo3' }
             ]
         },
         {
             name: 'Home',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'Dropdown_Items1', path: '/logo1' },
+                { name: 'Dropdown_Items2', path: '/logo2' },
+                { name: 'Dropdown_Items3', path: '/logo3' }
             ]
         },
         {
             name: 'Clothing & Accessories',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'Dropdown_Items1', path: '/logo1' },
+                { name: 'Dropdown_Items2', path: '/logo2' },
+                { name: 'Dropdown_Items3', path: '/logo3' }
             ]
         },
         {
             name: 'Jewelry',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'Dropdown_Items1', path: '/logo1' },
+                { name: 'Dropdown_Items2', path: '/logo2' },
+                { name: 'Dropdown_Items3', path: '/logo3' }
             ]
         },
         {
             name: 'Gifts',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'Dropdown_Items1', path: '/logo1' },
+                { name: 'Dropdown_Items2', path: '/logo2' },
+                { name: 'Dropdown_Items3', path: '/logo3' }
             ]
         },
         {
             name: 'Pets',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'Dropdown_Items1', path: '/logo1' },
+                { name: 'Dropdown_Items2', path: '/logo2' },
+                { name: 'Dropdown_Items3', path: '/logo3' }
             ]
         },
         {
             name: 'Art',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'Dropdown_Items1', path: '/logo1' },
+                { name: 'Dropdown_Items2', path: '/logo2' },
+                { name: 'Dropdown_Items3', path: '/logo3' }
             ]
         },
         {
             name: 'Custom',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'Dropdown_Items1', path: '/logo1' },
+                { name: 'Dropdown_Items2', path: '/logo2' },
+                { name: 'Dropdown_Items3', path: '/logo3' }
             ]
         },
         {
             name: 'Pre-order',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'Dropdown_Items1', path: '/logo1' },
+                { name: 'Dropdown_Items2', path: '/logo2' },
+                { name: 'Dropdown_Items3', path: '/logo3' }
             ]
         },
         {
             name: 'Auction',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'Dropdown_Items1', path: '/logo1' },
+                { name: 'Dropdown_Items2', path: '/logo2' },
+                { name: 'Dropdown_Items3', path: '/logo3' }
             ]
         },
         {
             name: 'Other',
             child: [
-                { name: 'Val 1', path: '/logo1' },
-                { name: 'Val 2', path: '/logo2' },
-                { name: 'Val 3', path: '/logo3' }
+                { name: 'My Account', path: '/my-account' },
+                { name: 'Product', path: '/product/pre-order' },
+                { name: 'Join As Seller', path: '/join-as-seller' },
+                { name: 'About Us', path: '/pages/about-us' },
+                { name: 'Sellers', path: '/pages/sellers' },
+                { name: 'Blog', path: '/pages/blogs' },
+                { name: 'Contact', path: '/help/contact' },
+                { name: 'Creator Grow', path: '/help/help-creators-grow' },
+                { name: 'Return&Refund', path: '/help/return-refund' },
+                { name: 'Shipping_Delivery', path: '/help/shipping-delivery' },
+                { name: 'Sign Up', path: '/auth/signup' }
             ]
         }
     ];
@@ -212,58 +220,13 @@ const MainNavBar = () => {
                                 <div key={i} className="dropdown_parent grid grid-cols-1">
                                     <button className="">{data.name}</button>
                                     <div className="dropdown_menu">
-                                        <Link href="/">
-                                            <a
-                                                className={`nav-link ${
-                                                    location.pathname === '/about'
-                                                        ? 'activeRoute'
-                                                        : location.pathname === '/home'
-                                                        ? 'activeRoute'
-                                                        : ''
-                                                }`}
-                                            >
-                                                DorpItems
-                                            </a>
-                                        </Link>
-                                        <Link href="/">
-                                            <a
-                                                className={`nav-link ${
-                                                    location.pathname === '/about'
-                                                        ? 'activeRoute'
-                                                        : location.pathname === '/home'
-                                                        ? 'activeRoute'
-                                                        : ''
-                                                }`}
-                                            >
-                                                DorpItems
-                                            </a>
-                                        </Link>
-                                        <Link href="/">
-                                            <a
-                                                className={`nav-link ${
-                                                    location.pathname === '/about'
-                                                        ? 'activeRoute'
-                                                        : location.pathname === '/home'
-                                                        ? 'activeRoute'
-                                                        : ''
-                                                }`}
-                                            >
-                                                DorpItems
-                                            </a>
-                                        </Link>
-                                        <Link href="/">
-                                            <a
-                                                className={`nav-link ${
-                                                    location.pathname === '/about'
-                                                        ? 'activeRoute'
-                                                        : location.pathname === '/home'
-                                                        ? 'activeRoute'
-                                                        : ''
-                                                }`}
-                                            >
-                                                DorpItems
-                                            </a>
-                                        </Link>
+                                        {data.child?.map((cd, i) => (
+                                            <Link key={i} href={`${cd.path}`}>
+                                                <a className={`nav-link ${location.pathname === cd.path ? 'activeRoute' : ''}`}>
+                                                    {cd.name}
+                                                </a>
+                                            </Link>
+                                        ))}
                                     </div>
                                 </div>
                             ))}

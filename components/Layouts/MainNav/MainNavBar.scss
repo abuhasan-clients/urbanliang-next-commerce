@@ -112,7 +112,7 @@
                     margin: 2px 0;
                     padding: 5px 0;
                     &:hover {
-                        color: $default_orange;
+                        color: $default_ed_orange;
                     }
                 }
                 .dropdown_child_parent {
@@ -232,9 +232,6 @@
 
 .activeRoute {
     color: $default_orange !important;
-}
-.activeRoute:hover {
-    border-top: none;
 }
 
 @import "./media";
