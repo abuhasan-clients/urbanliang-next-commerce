@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import AuroraHome from '../components/Pagescompo/Home/AuroraHome';
 import SignupMail from '../components/Pagescompo/Home/SignupMail';
-import BannerForCenter from '../components/Reuseable/BannerForCenter';
+import Banner from '../components/Reuseable/Banner';
 import { PageSeo } from '../components/Seo/PageSeo';
 
 const Home: NextPage = () => {
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
             <PageSeo title={`Home — `} />
             {/* <h4 className="">{t('name')}</h4> */}
 
-            <BannerForCenter
+            <Banner
                 image="https://i.ibb.co/Rz9vXx4/room-chair-vase-wall-66323-1280x720.jpg"
                 title={
                     <h5 className="TITLE_BODONI">
