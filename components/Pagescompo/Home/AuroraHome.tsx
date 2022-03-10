@@ -94,10 +94,10 @@ const AuroraHome: NextPage = () => {
         <>
             {/* <!-- component --> */}
             <div className=" ">
-                <p className="text-5xl">BESTSELLERS</p>
+                <p className="text-5xl mt-12">BESTSELLERS</p>
                 <div className="mx-auto">
                     <div className="w-full  flex justify-center mx-auto ">
-                        <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-24">
+                        <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-2">
                             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
                                 <div className="focus:outline-none relative  cardMotherDiv" aria-label="card 1">
                                     <AiFillHeart className="absolute top-5 right-5   addWish" />

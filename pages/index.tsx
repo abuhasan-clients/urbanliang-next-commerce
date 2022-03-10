@@ -29,6 +29,7 @@ const Home: NextPage = () => {
                         exciting creators and their products from all over the world
                     </p>
                 }
+
             // defaultClasses="rightInfo absolute right-20 top-40"
             />
 
