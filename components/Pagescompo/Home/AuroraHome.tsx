@@ -94,7 +94,7 @@ const AuroraHome: NextPage = () => {
         <>
             {/* <!-- component --> */}
             <div className=" ">
-                <p className="text-5xl mt-12">BESTSELLERS</p>
+                <p className="text-5xl mt-12 TITLE_BODONI">BESTSELLERS</p>
                 <div className="mx-auto">
                     <div className="w-full  flex justify-center mx-auto ">
                         <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-2">
@@ -262,7 +262,7 @@ const AuroraHome: NextPage = () => {
                         </div>
                     </div>
                     {/* home appliance start from here */}
-                    <p className="text-5xl">SHOP HOME</p>
+                    <p className="text-5xl TITLE_BODONI">SHOP HOME</p>
                     <div className="w-full  flex justify-center mx-auto ">
                         <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-5">
                             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
@@ -431,7 +431,7 @@ const AuroraHome: NextPage = () => {
                     {/* deal of the day */}
                     <DealOfTheDay />
                     {/* slider  new arrivals*/}
-                    <h1 className="text-5xl ml-2  mt-12 py-5">NEW ARRIVALS</h1>
+                    <h1 className="text-5xl ml-2  mt-12 py-5 TITLE_BODONI">NEW ARRIVALS</h1>
                     <SlickCarousel
                         arrData={imgArr}
                         arrows
@@ -445,7 +445,7 @@ const AuroraHome: NextPage = () => {
                         hasNext={<NextArrow />}
                     />
                     {/* slider  new arrivals*/}
-                    <h1 className="text-5xl ml-2 mb-12 mt-8">EDITORS CHOICE</h1>
+                    <h1 className="text-5xl ml-2 mb-12 mt-8 TITLE_BODONI">EDITORS CHOICE</h1>
                     <SlickCarousel
                         arrData={imgArr}
                         arrows
@@ -461,7 +461,7 @@ const AuroraHome: NextPage = () => {
                     {/* pre order */}
                     <PreOrder />
                     {/* slider  Auction*/}
-                    <h1 className="text-5xl ml-2 mb-12 mt-8">AUCTION</h1>
+                    <h1 className="text-5xl ml-2 mb-12 mt-8 TITLE_BODONI">AUCTION</h1>
                     <SlickCarousel
                         arrData={imgArr2}
                         arrows
@@ -475,7 +475,7 @@ const AuroraHome: NextPage = () => {
                         hasNext={<NextArrow />}
                     />
                     {/* home sho end */}
-                    <p className="text-5xl mb-12 mt-12">POPULAR STORES</p>
+                    <p className="text-5xl mb-12 mt-12 TITLE_BODONI">POPULAR STORES</p>
                     <div className=" w-full lex justify-center mx-auto ">
                         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 ">
                             <div className="popularSdiv cursor-pointer">

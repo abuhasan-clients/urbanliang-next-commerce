@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 const DealOfTheDay: NextPage = () => {
     return (
         <>
-            <p className="text-5xl mb-8 ml-3 mt-12">DEAL OF THE DAY</p>
+            <p className="text-5xl mb-8  mt-12 TITLE_BODONI">DEAL OF THE DAY</p>
             <div className="grid sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1    mb-8 ">
                 <div className="relative overflow-hidden  cursor-pointer">
                     <div className=" overflow-hidden">
