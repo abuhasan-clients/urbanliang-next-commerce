@@ -8,6 +8,13 @@
     span {
         display: block;
     }
+    .banner_icon {
+        margin-top: 20px;
+        width: 50px;
+    }
+    p {
+        font-size: 18px;
+    }
 }
 #mainClass {
     top: 30%;
@@ -39,11 +46,15 @@
             font-weight: 500;
         }
         font-size: 16px;
+
+        .banner_icon {
+            display: none;
+        }
     }
 }
 @media screen and (max-width: 668px) {
     #mainClass {
-        top: 0%;
+        top: -40px;
     }
     #bannerMain {
         height: 300px;
@@ -64,14 +75,13 @@
 
 @media screen and (max-width: 468px) {
     #mainClass {
-        top: -40px;
         right: 4%;
     }
     #bannerMain {
-        h5{
-          font-size: 30px;
+        h5 {
+            font-size: 30px;
         }
-        p{
+        p {
             font-size: 14px;
             font-weight: 500;
         }
