@@ -4,14 +4,14 @@ import { AiFillStar } from 'react-icons/ai';
 const PreOrder: NextPage = () => {
     return (
         <>
-            <p className="text-5xl mb-12 ml-3 mt-12 TITLE_BODONI">PRE-ORDER</p>
+            <p className="text-5xl mb-8 ml-3 mt-12 TITLE_BODONI">PRE-ORDER</p>
             <div className="grid sm:grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 pb-6 px-4   ">
-                <div className="focus:outline-none cardAll  creatorBlogCard" aria-label="card 2" id=" ">
-                    <div className="overflow-hidden imgSize ">
+                <div className="focus:outline-none preOrder" aria-label="card 2" id=" ">
+                    <div className="overflow-hidden  xl:h-96 md:h-72  h-96 ">
                         <img
                             role="img"
                             aria-label="gaming"
-                            className="focus:outline-none focus:outline-none "
+                            className="focus:outline-none focus:outline-none w-full h-full "
                             src="https://res-3.cloudinary.com/fieldfisher/image/upload/c_lfill,g_auto/f_auto,q_auto/v1/sectors/technology/tech_neoncircuitboard_857021704_medium_lc5h05"
                             alt="notes"
                         />
@@ -36,12 +36,13 @@ const PreOrder: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="focus:outline-none cardAll  creatorBlogCard" aria-label="card 2" id=" ">
-                    <div className="overflow-hidden imgSize ">
+
+                <div className="focus:outline-none preOrder" aria-label="card 2" id=" ">
+                    <div className="overflow-hidden  xl:h-96 md:h-72  h-86  ">
                         <img
                             role="img"
                             aria-label="gaming"
-                            className="focus:outline-none focus:outline-none "
+                            className="focus:outline-none focus:outline-none  w-full h-full "
                             src="https://i.pinimg.com/736x/f5/ce/20/f5ce20e9215e15d43aa1a006aedf435a.jpg"
                             alt="notes"
                         />

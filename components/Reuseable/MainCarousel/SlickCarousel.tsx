@@ -80,7 +80,7 @@ const SlickCarousel = ({
                 {arrData &&
                     arrData?.map((image: any, index: number) => (
                         <div key={index} className={` cardMotherDiv relative ${customClass}`} aria-label="card 2">
-                            <div className="overflow-hidden  h-80 ">
+                            <div className="overflow-hidden  xl:h-80 md:h-64  h-48">
                                 <AiFillHeart className="absolute top-5 right-5   addWish" />
                                 <img
                                     role="img"
