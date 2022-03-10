@@ -2,7 +2,6 @@
 
 #bannerMain {
     height: 700px;
-    background-color: red;
     display: flex;
     flex-direction: column;
     span {
@@ -13,7 +12,11 @@
         width: 50px;
     }
     h5{
+        font-size: 100px;
         font-weight: 100!important;
+        span{
+            margin-bottom: 50px;
+        }
     }
     p {
         font-size: 18px;
@@ -33,14 +36,21 @@
     #bannerMain {
         height: 500px;
     }
-}
-@media screen and (max-width: 1025px) {
     #mainClass {
-        top: 10%;
+        top: 0;
         right: 20%;
     }
+}
+@media screen and (max-width: 1025px) {
     #bannerMain {
         height: 400px;
+
+        h5{
+            font-size: 50px;
+            span{
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 @media screen and (max-width: 768px) {
@@ -55,7 +65,7 @@
         }
         font-size: 16px;
 
-        .banner_icon {
+        .banner_icon{
             display: none;
         }
     }
