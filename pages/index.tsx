@@ -13,23 +13,21 @@ const Home: NextPage = () => {
             {/* <h4 className="">{t('name')}</h4> */}
 
             <Banner
-                // layer
-                image="https://png.pngtree.com/background/20210715/original/pngtree-sell-banner-background-picture-image_1280025.jpg"
-                // rightInfo
-                // icon="fa-solid fa-heart-pulse"
+                image="https://i.ibb.co/Rz9vXx4/room-chair-vase-wall-66323-1280x720.jpg"
                 title={
                     <h5 className="TITLE_BODONI">
                         MEET THE <br /> MAKERS
                     </h5>
                 }
+                textColor="default_dark"
                 desc={
-                    <p>
+                    <p className="px-2">
                         We&sbquo;re LOVIE AURORA, a company-driven online marketplace that connects
                         <br /> you with unique, exciting creators and their products from all over the world <br /> you with unique,
                         exciting creators and their products from all over the world
                     </p>
                 }
-            // defaultClasses="rightInfo absolute right-20 top-40"
+                // defaultClasses="rightInfo absolute right-20 top-40"
             />
 
             <AuroraHome />
