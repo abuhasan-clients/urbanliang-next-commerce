@@ -16,7 +16,8 @@ const Home: NextPage = () => {
                 image="https://i.ibb.co/Rz9vXx4/room-chair-vase-wall-66323-1280x720.jpg"
                 title={
                     <h5 className="TITLE_BODONI">
-                        MEET THE <br /> MAKERS
+                        <span>MEET THE &nbsp;</span>
+                        <span>MAKERS</span>
                     </h5>
                 }
                 textColor="default_dark"
