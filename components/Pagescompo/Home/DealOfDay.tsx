@@ -7,11 +7,7 @@ const DealOfTheDay: NextPage = () => {
             <div className="grid sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1    mb-8 ">
                 <div className="relative overflow-hidden  cursor-pointer">
                     <div className=" overflow-hidden">
-                        <img
-                            className="w-full  "
-                            src="https://i.pinimg.com/736x/23/5c/d1/235cd179e3eec4cd5efb74e2a887b292.jpg"
-                            alt="Flower and sky"
-                        />
+                        <img className="w-full" src="https://i.ibb.co/yqT3kh2/istock-000046978234xlarge-large.jpg" alt="Flower and sky" />
                     </div>
 
                     <div className="absolute  bottom-0 left-0 px-12 py-4">
