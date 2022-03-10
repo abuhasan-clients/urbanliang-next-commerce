@@ -8,7 +8,7 @@ export const PageSeo = ({ title, description }: any) => {
     return (
         <Head>
             <title>{`${title} ${siteMetadata.title}`}</title>
-            <meta name="robots" content="follow, index" />
+            <meta name="LOVIE AURORA" content="follow, index" />
             <meta name="description" content={`${description} ${siteMetadata.description}`} />
             <meta
                 property="og:url"
