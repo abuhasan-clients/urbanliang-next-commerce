@@ -94,7 +94,7 @@ const AuroraHome: NextPage = () => {
         <>
             {/* <!-- component --> */}
             <div className=" ">
-                <p className="text-5xl mt-12 py-12 TITLE_BODONI">BESTSELLERS</p>
+                <p className="text-5xl titleMargin mb-3 TITLE_BODONI">BESTSELLERS</p>
                 <div className="mx-auto">
                     <div className="w-full  flex justify-center mx-auto ">
                         <div aria-label="Group of cards" className="focus:outline-none mt-12 lg:mt-2">
